@@ -1,6 +1,6 @@
-# extra-rules
+# extra-examples
 
-Rules for the IPTC EXTRA classification engine.
+Examples for the IPTC EXTRA classification engine.
 
 See the other repositories of the IPTC EXTRA project:
 
