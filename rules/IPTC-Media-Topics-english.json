@@ -1,0 +1,615 @@
+{
+  "rules": [
+    {
+      "createdAt": 1499972103348, 
+      "group": [], 
+      "id": "5967c20730c49e0001e6df0e", 
+      "name": "Test Rule", 
+      "query": "(or (and (title adj/regexp \"\\d+\\-?\\s+?year\\-?\\s?old\") (body any/stemming \"boy child children girl infant juvenile kid newborn schoolboy schoolgirl toddler\") ) (and (title adj/regexp \"\\d+\\-?\\s+?month\\-?\\s?old\") (body any/stemming \"boy child children girl infant juvenile kid newborn schoolboy schoolgirl toddler\") ) )", 
+      "schemas": [], 
+      "status": "draft", 
+      "submittedAt": 0, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000790", 
+      "topicName": "children", 
+      "uid": "", 
+      "updatedAt": 1499976935872
+    }, 
+    {
+      "createdAt": 1499961343027, 
+      "group": [], 
+      "id": "596797ffa7b11b0001cc0b16", 
+      "name": "Islam", 
+      "query": "(or (title any \"burqa islam hijab islamist islamophobia mosque muslim salafi salafis salafist salafists salafism shariah wahhabism wahhabist wahhabists\") (prox/unit=word/distance>0 (or (title any \"Islamic\") (title any \"Islamist\") ) (or (title adj \"Islamic militants\") (title adj \"Islamic state\") (title adj \"Islamist group\") (title adj \"Islamic militant\") (title adj \"Islamic militants\") ) ) (title adj \"antimuslim\") (title adj \"anti-muslim\") (and (or (text_content adj/stemming \"face veil\") (text_content adj/stemming \"full-face veil\") (text_content adj/stemming \"head scarf\") (text_content adj/stemming \"head scarves\") ) (or (text_content any/stemming \"burqa islam hijab islamist islamophobia mosque muslim salafi salafis salafist salafists salafism shariah wahhabism wahhabist wahhabists\") ) ) (or/count>=2 (text_content any \"burqa hijab islam islamist islamophobia mosque muslim salafi salafis salafist salafists salafism shariah wahhabism wahhabist wahhabists\") ) (or/count>=2 (text_content any \"abaya abayas burka burkas burqa burqas burqini burqinis burquini burquinis chador chadors hijab hijabs khimar khimars niqab niqabs shayla shaylas\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499969763030, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000677", 
+      "topicName": "Islam", 
+      "uid": "", 
+      "updatedAt": 1499969762903
+    }, 
+    {
+      "createdAt": 1499107645017, 
+      "group": [], 
+      "id": "595a913da7b11b0001cae336", 
+      "name": "Television - 20000051", 
+      "query": "(and (or (body adj \"ABC show\") (body adj \"airs on NBC\") (body adj \"celebrity apprentice\") (body adj \"comedy series\") (body adj \"coming to television\") (body adj \"drama series\") (body adj \"gets on tv\") (body adj \"new episodes\") (body adj \"reality tv\") (body adj \"returning to tv\") (body adj \"show had aired\") (\"Sitcom\") (body adj \"sky arts\") (body adj \"sports channel\") (body adj \"television personality\") (body adj \"television sports\") (body adj \"television star\") (body adj \"the x factor\") (body adj \"tv comedy\") (body adj \"tv drama\") (body adj \"tv show\") (body adj \"tv star\") (body adj \"urban myths series\") (body adj \"U.S.television\") (body adj \"youtube views\") ) (not (title = \"summary\") (title adj \"world news schedule\") (body adj \"star donald trump\") (and (title = \"Trump\") (or (body adj \"tv star\") (body adj \"television star\") ) ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499951105128, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000051", 
+      "topicName": "television", 
+      "uid": "", 
+      "updatedAt": 1499951104997
+    }, 
+    {
+      "createdAt": 1499107344623, 
+      "group": [], 
+      "id": "595a9010a7b11b0001cae335", 
+      "name": "Fashion - 20000011", 
+      "query": "(and (or (body adj \"American Apparel\") (\"catwalk\") (\"catwalks\") (body adj \"clothing design*\") (body adj \"clothing industry\") (\"couture\") (\"Lanvin\") (body adj \"fashion consultant*\") (body adj \"fashion designer*\") (body adj \"fashion magazine*\") (body adj \"fashion model*\") (body adj \"fashion show*\") (body adj \"fashion week\") (body adj \"French fashion brand*\") (body adj \"high fashion\") (body adj \"low fashion\") (body adj \"model* agenc*\") (body adj \"street fashion\") ) (not (title = \"summary\") (title = \"general\") (title = \"schedule\") (title = \"NHL\") (title = \"suspects\") (title = \"accuses\") (title = \"dossier\") (title = \"chief\") (title = \"driver\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499951162673, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000011", 
+      "topicName": "fashion", 
+      "uid": "", 
+      "updatedAt": 1499951162571
+    }, 
+    {
+      "createdAt": 1499107125382, 
+      "group": [], 
+      "id": "595a8f35a7b11b0001cae333", 
+      "name": "Health Insurance - 20000483", 
+      "query": "(and (or (title any \"ACA AXA healthcare Medicaid Medicare Obamacare\") (title adj \"Health coverage\") (title adj \"Health insur*\") (or/count>=2 (text_content any \"ACA Aetna BlueCross GHI Medicaid Medicare Obamacare UnitedHealth\") (text_content adj \"Blue Cross\") (body adj \"health coverage\") (text_content adj \"health insur*\") (body adj \"single payer\") (text_content adj \"United Health\") ) ) (not (or (title = \"summary\") (title = \"schedule\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499967348692, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000483", 
+      "topicName": "health insurance", 
+      "uid": "", 
+      "updatedAt": 1499967347915
+    }, 
+    {
+      "createdAt": 1499106990267, 
+      "group": [], 
+      "id": "595a8eaea7b11b0001cae332", 
+      "name": "Tourism - 20000564", 
+      "query": "(and (or (title = \"tourist*\") (title = \"tourism\") (title adj \"ski resort\") (body adj \"Budget tour*\") (body adj \"Curious visitors\") (\"Graceland\") (\"Kaikoura\") (body adj \"Holiday destination*\") (body adj \"Holiday island*\") (body adj \"Most visited\") (body adj \"Package tour*\") (\"SeaWorld\") (body adj \"Travel agents\") (body adj \"Visiting celebrities\") (body adj \"tourist trail\") (body adj \"tourist income\") (body adj \"tourism industry\") (body adj \"tourist region\") (body adj \"lapland tourism\") (body adj \"new landmark\") (body adj \"Chinese tourists\") ) (not (or (body adj \"tourist resort town\") (title = \"summary\") (title = \"schedule\") (title = \"gambia*\") (title adj \"expenses scandal\") (title = \"kardashian\") (title adj \"bpm music\") (title adj \"bpm festival\") (title adj \"honey trap*\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499951603283, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000564", 
+      "topicName": "tourism", 
+      "uid": "", 
+      "updatedAt": 1499951603172
+    }, 
+    {
+      "createdAt": 1499106837754, 
+      "group": [], 
+      "id": "595a8e15a7b11b0001cae331", 
+      "name": "Christianity - 20000659", 
+      "query": "(and (or (title = \"christian*\") (title = \"vatican\") (title = \"epiphany\") (title = \"nazarene\") (title adj \"christmas poster\") (title = \"pope\") (body adj \"jesuit\") (body adj \"catholic core\") (body adj \"infant christ\") (body adj \"episcopal church\") (body adj \"christmas day service\") (body adj \"christian nonprofit\") (body adj \"christian anti\") (body adj \"christian town\") (body adj \"christian pilgrims\") (body adj \"christian farmers\") (body adj \"senior christian\") (body adj \"christian missionaries\") (body adj \"knights of malta\") (body adj \"coptic christian\") (body adj \"muslims and christians\") ) (not (title = \"summary\") (title = \"schedule\") (title = \"update\") (title = \"refile\") (title = \"diary\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499953572671, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000659", 
+      "topicName": "Christianity", 
+      "uid": "", 
+      "updatedAt": 1499953572534
+    }, 
+    {
+      "createdAt": 1499106729034, 
+      "group": [], 
+      "id": "595a8da9a7b11b0001cae330", 
+      "name": "Cycling - 20000892", 
+      "query": "(and (or (body adj \"Bicycle lane*\") (body adj \"Bike lane*\") (body adj \"Cycle path*\") (body adj \"Cycle track*\") (\"Cycling\") (\"Cyclists\") (body adj \"Riding bicycle*\") (body adj \"Tour de France\") (body adj \"Tour down under\") (body adj \"Use bike*\") (body adj \"Using bike*\") ) (not (title = \"summary\") (title = \"schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499953590376, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000892", 
+      "topicName": "cycling", 
+      "uid": "", 
+      "updatedAt": 1499953590299
+    }, 
+    {
+      "createdAt": 1499106398034, 
+      "group": [], 
+      "id": "595a8c5ea7b11b0001cae32f", 
+      "name": "Fire - 20000150", 
+      "query": "(and (or (title any \"firefighter firefighters\") (body adj \"fire swept\") (body adj \"battle the blaze\") (body adj \"blazing high-rise\") (body adj \"house fire\") (text_content any/stemming \"arson arsonist arsonists\") ) (not (title = \"summary\") (title = \"schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499969776094, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000150", 
+      "topicName": "fire", 
+      "uid": "", 
+      "updatedAt": 1499969775947
+    }, 
+    {
+      "createdAt": 1499106165447, 
+      "group": [], 
+      "id": "595a8b75a7b11b0001cae32e", 
+      "name": "Sexual Assault - 20000085", 
+      "query": "(and (or (title any \"rape raped rapes raping\") (title adj \"comfort woman\") (title adj \"sex nightmare\") (title adj \"sex abuse\") (title adj \"sexual assault\") (title adj \"child porn\") (body adj \"Child sex trafficking\") (body adj \"Child porn*\") (body adj \"Comfort women\") (body adj \"Crimes against women\") (\"molest*\") (\"rape\") (\"rapes\") (\"raped\") (body adj \"Sex abuse\") (body adj \"Sexually abusing\") (body adj \"sexual assault*\") (body adj \"sex* attack*\") (body adj \"Sex slave*\") (body adj \"Sex traffic*\") (body adj \"sexual violence\") ) (not (body adj \"nez rape\") (title = \"summary\") (title = \"schedule\") (title = \"shortens\") (title = \"sweetheart\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499961190396, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000085", 
+      "topicName": "sexual assault", 
+      "uid": "", 
+      "updatedAt": 1499961190310
+    }, 
+    {
+      "createdAt": 1499106035367, 
+      "group": [], 
+      "id": "595a8af3a7b11b0001cae32d", 
+      "name": "Bankruptcy - 20000174", 
+      "query": "(and (or (title = \"bankruptcy\") (or/count>=3 (\"bankruptcy\") ) (body adj \"Administration process\") (body adj \"bankruptcy filing\") (body adj \"Goes into administration\") (body adj \"Gone into administration\") (\"Insolvency\") (body adj \"Side goes bust\") (body adj \"Went into administration\") ) (not (title = \"summary\") (title adj \"to invest\") (title adj \"special report\") (title adj \"wilbur ross\") (title = \"iceland\") (body adj \"bankruptcy attorney\") (title adj \"stimulus plan\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499961178583, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000174", 
+      "topicName": "bankruptcy", 
+      "uid": "", 
+      "updatedAt": 1499961178459
+    }, 
+    {
+      "createdAt": 1499105686365, 
+      "group": [], 
+      "id": "595a8996a7b11b0001cae32c", 
+      "name": "Advertising - 20000305", 
+      "query": "(and (or (title any \"ad ads advertise advertisement advertisements advertising\") (or/count>=3 (text_content any \"ad ads advertise advertisement advertisements advertising\") ) (title = \"marketing\") (title adj \"ad spend\") (title adj \"ad package*\") (body adj \"Ad revenue*\") (body adj \"Ad site\") (body adj \"Ad spend\") (body adj \"Advertising agencies\") (body adj \"Advertising agency\") (body adj \"Advertising campaign*\") (body adj \"Advertising client\") (body adj \"Advertising clients\") (body adj \"Advertising firm\") (body adj \"Advertising firms\") (body adj \"Advertising rule\") (body adj \"Advertising rules\") (body adj \"Advertising website\") (body adj \"Company to sever ties with the show\") (body adj \"Firm cut ties to show\") (title adj \"Kawasaki dumps apprentice\") (body adj \"Online ad\") (body adj \"Online ads\") (body adj \"Personalised ads\") (body adj \"Personalized ads\") (body adj \"Targeted ads\") (body adj \"Targeted advertising\") ) (not (title = \"summary\") (title = \"schedule\") (title = \"timeline\") (title adj \"sumner redstone\") (title adj \"black market\") (title = \"politics\") (body adj \"advertising site\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499969816185, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000305", 
+      "topicName": "advertising", 
+      "uid": "", 
+      "updatedAt": 1499969816021
+    }, 
+    {
+      "createdAt": 1499104287576, 
+      "group": [], 
+      "id": "595a841fa7b11b0001cae32b", 
+      "name": "Economic Policy - 20000345", 
+      "query": "(or (title adj \"economic policy\") (title adj \"anti-trade\") (title adj \"retaliatory trade\") (title adj \"trade priority\") (title adj \"free trade deal\") (title = \"subsidies\") (title adj \"most protectionist\") (body adj \"decision to float\") (body adj \"freely floated\") )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499961228280, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000345", 
+      "topicName": "economic policy", 
+      "uid": "", 
+      "updatedAt": 1499961228185
+    }, 
+    {
+      "createdAt": 1499104052025, 
+      "group": [], 
+      "id": "595a8334a7b11b0001cae32a", 
+      "name": "Education - 05000000", 
+      "query": "(and (or (title any \"education colleges professor university universities\") (prox/unit=word/distance>0 (title any \"college\") (title adj \"electoral college\") ) (body adj \"Disrupted education\") (body adj \"Educate and care for\") (body adj \"Education and opportunities\") (body adj \"Education firm*\") (body adj \"Education sector\") (body adj \"Educational program*\") (body adj \"Educational support\") (body adj \"Home schooling\") (body adj \"Lack of schools\") (body adj \"Lack of teachers\") (body adj \"Language tutor*\") (body adj \"Middle school\") (body adj \"On their way to school\") (body adj \"Patriotic education\") (body adj \"Primary school*\") (body adj \"Private school*\") (body adj \"Public education\") (body adj \"Religious school*\") (body adj \"Rural school*\") (body adj \"School board*\") (body adj \"School district*\") (body adj \"School rules\") (body adj \"School standards\") (body adj \"Teacher salaries\") (body adj \"University lecturer*\") ) (not (title = \"summary\") (title = \"schedule\") (title = \"poll*\") (title = \"diary\") (title adj \"top jobs\") (title = \"election\") (title = \"golf\") (title = \"nfl\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499961251504, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:05000000", 
+      "topicName": "education", 
+      "uid": "", 
+      "updatedAt": 1499961251409
+    }, 
+    {
+      "createdAt": 1499103900809, 
+      "group": [], 
+      "id": "595a829ca7b11b0001cae329", 
+      "name": "Summit Meetings - 20000640", 
+      "query": "(and (or (title adj \"Top economic events\") (title = \"summit\") (body adj \"Abe meeting Putin\") (body adj \"Annual summit\") (body adj \"G20 conference\") (body adj \"G20 summit\") (body adj \"G7 nations\") (body adj \"G7 partners\") (body adj \"Hot spring summit\") (body adj \"Putin Abe\") (body adj \"Summit at\") (body adj \"summit convened\") (body adj \"Summit meeting\") (body adj \"Summit preparations\") ) (not (title = \"summary\") (title = \"schedule\") (title = \"tennis\") (title = \"cycling\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499961265377, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000640", 
+      "topicName": "summit meetings", 
+      "uid": "", 
+      "updatedAt": 1499961265247
+    }, 
+    {
+      "createdAt": 1499103726839, 
+      "group": [], 
+      "id": "595a81eea7b11b0001cae328", 
+      "name": "Immigration - 20000771", 
+      "query": "(and (or (title any \"deportation deported deporting deports emigration immigration immigrant immigrants migrant migrants refugee refugees visa visas\") (title adj \"border wall\") (title adj \"eu passport\") (title adj \"entry visa\") (title adj \"migrant crisis\") (title adj \"migration deal\") (title adj \"curb migration\") (title adj \"asylum cap\") (title adj \"stem migration\") (title adj \"round up kids\") (body adj \"border with mexico\") (body adj \"border wall\") (body adj \"cuban immigrants\") (body adj \"eb-5\") (body adj \"h1-b\") (body adj \"high-skilled visa\") (body adj \"high-skilled visas\") (body adj \"immigration policy\") (body adj \"immigration policies\") (body adj \"illegal immigration\") (body adj \"immigration skills\") (body any \"emigration\") (body adj \"migrant worker\") (body adj \"migrant workers\") (body adj \"rescind visas\") (body adj \"transit country\") (body adj \"without visa\") (body adj \"without visas\") (body adj \"work visa\") (body adj \"work visas\") (prox/unit=sentence/distance=1 (body adj \"anti-immigrant\") (body adj \"alternative for germany\") ) (and (text_content any \"immigrant immigration immigrants migrant migrants refugee refugees\") (prox/unit=word/distance<2 (body any \"asylum residency\") (body any \"grant grated granting seek seeking sought\") ) ) ) (not (title = \"schedule\") (title = \"summary\") (title = \"inauguration\") (title = \"protest*\") (title = \"forex\") (title = \"fifa\") (title = \"factbox\") (title = \"poll\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499969826496, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000771", 
+      "topicName": "immigration", 
+      "uid": "", 
+      "updatedAt": 1499969826346
+    }, 
+    {
+      "createdAt": 1499103439734, 
+      "group": [], 
+      "id": "595a80cfa7b11b0001cae327", 
+      "name": "National or Ethnic Minority - 20000795", 
+      "query": "(and (or (title = \"minorit*\") (title = \"jewish\") (title = \"discrimination\") (title = \"bias*\") (title adj \"civil rights\") (title adj \"lgbt rights\") (title adj \"same-sex\") (body = \"minorities\") (\"Rohingya\") (\"KKK\") (body adj \"ku klux klan\") (body adj \"issues of race\") (body adj \"religious minorit*\") (body adj \"religious group*\") (body adj \"ethnic minorit*\") (body adj \"minority group*\") (body adj \"latino communit*\") (body adj \"black communit*\") (body adj \"hate crime*\") (body adj \"lavender scare\") (body adj \"racial discrimination\") (body adj \"racial slur*\") (body adj \"target* minorit*\") (body adj \"ban on muslims\") (body adj \"muslim ban\") (body adj \"white suprem*\") (body adj \"white actor\") (body adj \"black lives matter\") (body adj \"martin luther king's\") ) (not (or (title = \"summary\") (title = \"schedule\") (title = \"factbox\") (title = \"manning\") (title = \"brexit\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499962973709, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000795", 
+      "topicName": "national or ethnic minority", 
+      "uid": "", 
+      "updatedAt": 1499962973623
+    }, 
+    {
+      "createdAt": 1499086856327, 
+      "group": [], 
+      "id": "595a4008a7b11b0001cae325", 
+      "name": "Music - 20000018", 
+      "query": "(or (title any \"beatles coldplay flamenco lumineers shakira u2\") (title adj \"Andrea Bocelli\") (title adj \"Bob Dylan\") (title adj \"Bruce Springsteen\") (title adj \"David Bowie\") (title adj \"Elton John\") (title adj \"Elvis Presley\") (title adj \"George Michael\") (title adj \"Grateful Dead\") (title adj \"Katy Perry\") (title adj \"Michael Jackson\") (title adj \"music festival\") (title adj \"Pearl Jam\") (title adj \"Peter Sarstedt\") (title adj \"Pink Floyd\") (title adj \"Rolling Stones\") (title adj \"Taylor Swift\") (and (title any \"conductor conductors singer singers\") (text_content any \"carols music musician musicians orchestra orchestras sing song songs sung\") ) (and (text_content adj \"The Slants\") (or (text_content adj \"rock band\") (text_content adj \"Simon Tam\") ) ) (prox/unit=word/distance<=3 (text_content any/stemming \"play\") (text_content any/stemming \"bass drum guitar piano\") ) (prox/unit=word/distance<=3 (text_content any/stemming \"perform write\") (text_content any/stemming \"song\") ) (and (or/count>=3 (text_content any/stemming \"album autotune choir concert Graceland musician orchestra percussionist recital rapper song sing\") (text_content adj \"best original song\") (text_content adj \"best song\") (text_content adj/stemming \"boy band\") (text_content adj \"Bruce Springsteen\") (text_content adj \"country and western\") (text_content adj \"early music\") (text_content adj \"Elvis Presley\") (text_content adj \"favorite group\") (text_content adj \"featured music\") (text_content adj/stemming \"girl group\") (text_content adj/stemming \"Grammy Award*\") (text_content adj \"heavy metal\") (text_content adj \"movie and music\") (text_content adj/stemming \"music festival\") (text_content adj \"music business\") (text_content adj/stemming \"music star\") (text_content adj/stemming \"pop group\") (text_content adj/stemming \"pop music\") (text_content adj/stemming \"pop star\") (text_content adj/stemming \"punk rock\") (text_content adj/stemming \"rap star\") (text_content adj/stemming \"recording artist\") (text_content adj \"rock and roll\") (text_content adj/stemming \"rock band\") (text_content adj/stemming \"rock star\") (text_content adj \"singing concert\") (text_content adj \"song-writer*\") ) (not (title = \"summary\") (title = \"diary\") (title = \"schedule\") (title = \"fortress\") (title = \"soccer\") (title adj \"Saudi prince\") (title adj \"top jobs\") (title = \"BREXIT\") (title = \"trauma\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499969834242, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000018", 
+      "topicName": "music", 
+      "uid": "", 
+      "updatedAt": 1499969834077
+    }, 
+    {
+      "createdAt": 1498766467377, 
+      "group": [], 
+      "id": "59555c83a7b11b0001cae324", 
+      "name": "Gays and Lesbians - 20000792", 
+      "query": "(and (or (title any \"homosexual homosexuality homosexuals lesbian lesbians lgbt\") (title adj \"bathroom bill\") (title adj \"gay pride\") (title adj \"gay rights\") (title adj/literal \"l.g.b.t.\") (title adj \"same-sex\") (or/count>=3 (text_content any \"gay lgbt homosexual homosexuality homosexuals trans transgender transsexual transsexuals\") ) (text_content adj \"gay equality\") (text_content adj \"gay rights\") (text_content adj \"gender dysphoria\") (text_content adj \"gender parity\") (and (text_content any \"Orlando\") (text_content adj \"Noor Salman\") ) (and (title any \"manning\") (body any \"trans transgender\") ) ) (not (title = \"summary\") (title = \"schedule\") (title = \"golf\") (title adj \"cash-for-ash\") (body adj \"esteban santiago\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499969841386, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000792", 
+      "topicName": "gays and lesbians", 
+      "uid": "", 
+      "updatedAt": 1499969841269
+    }, 
+    {
+      "createdAt": 1498766114369, 
+      "group": [], 
+      "id": "59555b22a7b11b0001cae323", 
+      "name": "Children - 20000790", 
+      "query": "(and (or (title any \"babies child children infant infants kids newborn newborns pediatric pediatrician pediatricians toddler toddlers\") (prox/unit=word/distance>0 (title any \"kid\") (or (title adj \"comeback kid\") (title adj \"tennis-comeback kid\") ) ) (and (title any \"baby boy boys girl girls\") (or (body any \"boyhood child children circumcised circumcision girlhood infant infants kid kids pediatric pediatrics pediatrician pediatricians toddler toddlers vaccine vaccinate vaccination\") (body adj \"boys-and-girls\") ) ) (or/count>=3 (body any \"child children newborn newborns infant infants kids pediatric pediatrician pediatricians schoolboy schoolboys schoolgirl schoolgirls toddler toddlers\") (text_content adj \"1-year-old\") (text_content adj \"2-year-old\") (text_content adj \"3-year-old\") (text_content adj \"4-year-old\") (text_content adj \"5-year-old\") (text_content adj \"6-year-old\") (text_content adj \"7-year-old\") (text_content adj \"8-year-old\") (text_content adj \"9-year-old\") (text_content adj \"10-year-old\") (text_content adj \"11-year-old\") (text_content adj \"12-year-old\") (text_content adj \"1-year old\") (text_content adj \"2-year old\") (text_content adj \"3-year old\") (text_content adj \"4-year old\") (text_content adj \"5-year old\") (text_content adj \"6-year old\") (text_content adj \"7-year old\") (text_content adj \"8-year old\") (text_content adj \"9-year old\") (text_content adj \"10-year old\") (text_content adj \"11-year old\") (text_content adj \"12-year old\") (text_content adj \"one-year-old\") (text_content adj \"two-year-old\") (text_content adj \"three-year-old\") (text_content adj \"four-year-old\") (text_content adj \"five-year-old\") (text_content adj \"six-year-old\") (text_content adj \"seven-year-old\") (text_content adj \"eight-year-old\") (text_content adj \"nine-year-old\") (text_content adj \"ten-year-old\") (text_content adj \"eleven-year-old\") (text_content adj \"twelve-year-old\") (text_content adj \"one-year old\") (text_content adj \"two-year old\") (text_content adj \"three-year old\") (text_content adj \"four-year old\") (text_content adj \"five-year old\") (text_content adj \"six-year old\") (text_content adj \"seven-year old\") (text_content adj \"eight-year old\") (text_content adj \"nine-year old\") (text_content adj \"ten-year old\") (text_content adj \"eleven-year old\") (text_content adj \"twelve-year old\") (text_content adj \"age of one\") (text_content adj \"age of two\") (text_content adj \"age of three\") (text_content adj \"age of four\") (text_content adj \"age of five\") (text_content adj \"age of six\") (text_content adj \"age of seven\") (text_content adj \"age of eight\") (text_content adj \"age of nine\") (text_content adj \"age of ten\") (text_content adj \"age of eleven\") (text_content adj \"age of twelve\") (text_content adj \"was just six\") (text_content adj \"Aylan Kurdi\") (text_content adj \"boys-and-girls\") (text_content adj \"childhood stunting\") (text_content adj \"child beauty\") (text_content adj \"child development\") (text_content adj \"children tested\") (text_content adj \"create babies\") (text_content adj \"commercial surrogacy\") (text_content adj \"cub scouts\") (text_content adj \"katie rough\") (text_content adj \"one-child policy\") (text_content adj \"Sharbat Gula\") (text_content adj \"underprivileged children\") (text_content adj \"young children\") ) (and (prox/unit=sentence/distance=1 (text_content any/stemming \"boy boys child children girl girls youth youths\") (or (text_content any/stemming \"abuse circumcised circumcision detention homeless kidnap kidnapped malnutrition malnourished molest molestation sex trafficker traffickers trafficking underprivileged vaccinate vaccination\") (text_content adj/stemming \"female genital mutilation\") ) ) (or/count>=2 (text_content any/stemming \"boy boys child children girl girls youth\") ) ) ) (not (title adj \"baby orangutan\") (text_content adj \"Edgar Maddison Welch\") (title any \"Summary\") (title adj \"World-News-Schedule\") (title adj \"World News Schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499972084601, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000790", 
+      "topicName": "children", 
+      "uid": "", 
+      "updatedAt": 1499972084502
+    }, 
+    {
+      "createdAt": 1498763771403, 
+      "group": [], 
+      "id": "595551fba7b11b0001cae320", 
+      "name": "Data Protection Policy - 20000627", 
+      "query": "(and (or (title = \"manning\") (title = \"snowden\") (title = \"wikileaks\") (title adj \"anti-hacking\") (title adj \"reality winner\") (title adj \"cyber campaign\") (title adj \"cyber controls\") (title adj \"massive hack\") (title adj \"yahoo hack\") (body adj \"data protection\") (body adj \"protect data\") (\"hackers\") (\"encryption\") ) (not (title = \"summary\") (title = \"schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963019849, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000627", 
+      "topicName": "data protection policy", 
+      "uid": "", 
+      "updatedAt": 1499963019767
+    }, 
+    {
+      "createdAt": 1498762764997, 
+      "group": [], 
+      "id": "59554e0ca7b11b0001cae31f", 
+      "name": "Taxation - 20000620", 
+      "query": "(and (or (title = \"tax*\") (title = \"tariff*\") (title = \"levy\") (\"supertax*\") (body adj \"stamp duty\") (body adj \"border tax\") (body adj \"tax reform\") (body adj \"lower taxes\") (body adj \"tax disputes\") (body adj \"tax payments\") (body adj \"tax and regulation\") ) (not (title = \"summary\") (title = \"schedule\") (title adj \"tax return*\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963069910, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000620", 
+      "topicName": "taxation", 
+      "uid": "", 
+      "updatedAt": 1499963069838
+    }, 
+    {
+      "createdAt": 1498762488487, 
+      "group": [], 
+      "id": "59554cf8a7b11b0001cae31e", 
+      "name": "Antitrust Issue - 20000123", 
+      "query": "(or (title = \"antitrust\") (title adj \"anti-trust\") (body adj \"competition and markets\") (body adj \"competition watchdog\") (text_content adj \"price fixing\") (text_content adj \"price-fixing\") (or/count>=3 (text_content adj \"antitrust\") (text_content adj \"anti-trust\") (text_content adj \"price fixing\") (text_content adj \"price-fixing\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499970177000, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000123", 
+      "topicName": "antitrust issue", 
+      "uid": "", 
+      "updatedAt": 1499970176902
+    }, 
+    {
+      "createdAt": 1498761399292, 
+      "group": [], 
+      "id": "595548b7a7b11b0001cae31c", 
+      "name": "Cancer - 20000447", 
+      "query": "(and (or (title any \"cancer cancerous Hodgkins hodgkin's leukemia melanoma melanomas oncologist oncologists oncology\") (or/count>=4 (text_content any \"cancer oncology\") ) (and (text_content adj \"National Cancer Institute\") (text_content any \"death deaths\") ) ) (not (title adj \"Reuters Health News Summary\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499970165630, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000447", 
+      "topicName": "cancer", 
+      "uid": "", 
+      "updatedAt": 1499970165538
+    }, 
+    {
+      "createdAt": 1498761146925, 
+      "group": [], 
+      "id": "595547baa7b11b0001cae31b", 
+      "name": "Homicide - 2000099", 
+      "query": "(and (or (title = \"homicide*\") (title = \"murder*\") (title = \"gunman\") (title = \"gunmen\") (title = \"breivik\") (title = \"rampage\") (title = \"executed\") (title adj \"nightclub shoot*\") (title adj \"lauderdale shoot*\") (title adj \"florida shooting\") (title adj \"truck attack*\") (title adj \"dylann roof\") (title adj \"shooter kill*\") (title adj \"massacre prison\") (title adj \"church shoot*\") (title adj \"shooting suspect\") (title adj \"shooter open* fire\") (title adj \"people shot\") (title adj \"airport shooting\") (title adj \"nightclub attack*\") (title adj \"convicted of killing\") (title adj \"berlin attack\") (title adj \"shot dead\") (title adj \"fatally shot\") (body adj \"extrajudicial killings\") (body = \"homicide*\") (body = \"murder\") (body = \"murdered\") (body adj \"arrested following the death\") (body adj \"personally killing\") (body adj \"execution-style\") (body adj \"shooting rampage\") ) (not (or (title = \"schedule\") (title = \"summary\") (title = \"kidnap*\") (title = \"aleppo\") (title = \"abortion*\") (title = \"militant*\") (title adj \"very good\") (title adj \"civil rights\") (title adj \"getting away with murder\") (title adj \"massacre denial\") (title adj \"fake news\") (body adj \"getting away with murder\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963090929, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000099", 
+      "topicName": "homicide", 
+      "uid": "", 
+      "updatedAt": 1499963090834
+    }, 
+    {
+      "createdAt": 1498759846634, 
+      "group": [], 
+      "id": "595542a6a7b11b0001cae31a", 
+      "name": "Medical Research - 2000073", 
+      "query": "(and (or (\"amgen\") (\"biosimilar*\") (body adj \"biotech cancer\") (body adj \"biotech drug*\") (body adj \"biotech firm*\") (body adj \"cancer drug*\") (\"esmo\") (\"Glaxosmithkline\") (body adj \"higher risk of developing\") (\"immunotherapeutic*\") (\"Lancet\") (body adj \"medical journal*\") (body adj \"medical research\") (body adj \"pharmaceutical industry\") (body adj \"tamiflu treatment\") ) (not (title = \"summary\") (title = \"schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963096920, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000737", 
+      "topicName": "medical research", 
+      "uid": "", 
+      "updatedAt": 1499963096799
+    }, 
+    {
+      "createdAt": 1498758511626, 
+      "group": [], 
+      "id": "59553d6fa7b11b0001cae319", 
+      "name": "Golf - 20000940", 
+      "query": "(and (or (or (title any \"golf pga\") (title adj \"abu dhabi championship\") (title adj \"Ryder Cup\") (title adj \"South African Open\") (or/countunique>3 (body adj \"1-iron\") (body adj \"2-iron\") (body adj \"3-iron\") (body adj \"4-iron\") (body adj \"5-iron\") (body adj \"6-iron\") (body adj \"7-iron\") (body adj \"8-iron\") (body adj \"9-iron\") (body adj \"Jordan Spieth\") (body adj \"over-par\") (body adj \"Rory Mcilroy\") (body adj \"under-par\") ) ) ) (not (body adj \"Billy Walters\") (title adj \"Reuters Sports News Summary\") (title adj \"Reuters Sports Schedule\") (title adj \"ReutersU.S.SportsSchedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963106934, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000940", 
+      "topicName": "golf", 
+      "uid": "", 
+      "updatedAt": 1499963106828
+    }, 
+    {
+      "createdAt": 1498758377081, 
+      "group": [], 
+      "id": "59553ce9a7b11b0001cae318", 
+      "name": "Cinema - 20000005", 
+      "query": "(and (or (or (title any/stemming \"Bafta cinema DGA documentary documentaries film films movie movies scorsese\") (title adj \"Academy Award\") (title adj \"Academy Awards\") (title adj \"Box Office\") (title adj \"Golden Globe\") (title adj \"Golden Globes\") (title adj \"Paramount Pictures\") (title adj \"Pixar\") ) (and (title any/stemming \"actor actors actress actresses premiere star starred starring stars\") (or (body any/stemming \"bafta cinema documentary documentaries Dreamworks film films Hollywood MGM Miramax movie movies Pixar screenplay\") (body adj/stemming \"Academy Awards\") (body adj \"Columbia Pictures\") (body adj \"Lions Gate\") (body adj \"MTV Films\") (body adj \"New Line Cinema\") (body adj \"Paramount Pictures\") (body adj \"Sony Pictures\") ) ) (or/count>=3 (body any/stemming \"bafta bollywood cinema documentary film films hollywood movie\") ) (or (body adj \"rated g\") (body adj \"rated pg\") (body adj \"rated pg-13\") (body adj \"rated nc-17\") (body adj \"rated r\") (body adj \"this film is rated\") (body adj \"this film is not rated\") (body adj \"under 17 requires accompanying parent\") ) ) (not (title adj \"Reuters Entertainment News Summary\") (title adj \"Reuters People News Summary\") (title adj \"World News Schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963114942, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000005", 
+      "topicName": "cinema", 
+      "uid": "", 
+      "updatedAt": 1499963114818
+    }, 
+    {
+      "createdAt": 1498758176816, 
+      "group": [], 
+      "id": "59553c20a7b11b0001cae317", 
+      "name": "Soccer - 20001065", 
+      "query": "(and (or (title adj \"african nations cup\") (title adj \"cup of nations\") (title any \"bundesliga concacaf fifa midfielder soccer striker\") (title adj/literal \"m.l.s\") (title adj \"champions league\") (title adj \"confederations cup\") (title adj \"copa america\") (title adj \"copa libertadores\") (title adj \"english football league\") (title adj \"fa cup\") (title adj \"football association\") (and (title adj \"gold cup\") (not (text_content any \"horse horseracing\") (text_content adj \"horse racing\") ) ) (title adj \"la liga\") (title adj \"ligue 1\") (title adj \"major league soccer\") (title adj \"premier league\") (title adj \"serie a\") (and (title adj \"world cup\") (body = \"soccer\") ) (title adj \"women's world cup\") (or/countunique>2 (body adj \"african footballer of the year\") (body adj \"african nations cup\") (body any \"midfielder qualifier qualifying soccer striker\") (body adj/literal \"m.l.s.\") (body adj \"athletic bilbao\") (body adj \"atletico madrid\") (body = \"arsenal\") (body adj \"bayern munich\") (body adj \"borussia dortmund\") (body = \"bundesliga\") (body adj \"cambridge united\") (body adj \"champions league\") (body = \"chelsea\") (body adj \"clint dempsey\") (body = \"concacaf\") (body adj \"confederations cup\") (body adj \"copa america\") (body adj \"copa libertadores\") (body adj \"cristiano ronaldo\") (body adj \"english football league\") (body = \"everton\") (body adj \"fa cup\") (body = \"fifa\") (body adj \"football association\") (body = \"juventus\") (body adj \"la liga\") (body adj \"leeds united\") (body adj \"ligue 1\") (body adj \"leicester city\") (body adj \"lionel messi\") (body = \"liverpool\") (body adj \"major league soccer\") (body adj \"manchester city\") (body adj \"manchester united\") (body adj \"national team\") (body adj \"olympique lyonnais\") (body adj \"paris st germain\") (and (body adj \"premier league\") (not (body = \"cricket\") ) ) (body adj \"real madrid\") (body adj \"riyad mahrez\") (body adj \"serie a\") (body = \"villarreal\") (body adj \"west ham united\") (and (body adj \"world cup\") (not (text_content any \"cricket golf hockey rugby ski skier skiing\") ) ) ) ) // below is specific to reuters corpora // (not (title adj \"reuters sports news summary\") (title adj \"reuters sports schedule\") (title adj \"world news schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499970148772, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20001065", 
+      "topicName": "soccer", 
+      "uid": "", 
+      "updatedAt": 1499970148643
+    }, 
+    {
+      "createdAt": 1498757117066, 
+      "group": [], 
+      "id": "595537fda7b11b0001cae316", 
+      "name": "Drug Trafficking - 20000096", 
+      "query": "(and (or (title any \"narcotic narcotics\") (title adj \"El Chapo\") (title adj/stemming \"drug crime\") (title adj \"drug crisis\") (title adj/stemming \"drug gang\") (title adj/stemming \"drug lord\") (title adj/stemming \"drug offender\") (title adj/stemming \"drug sentence\") (title adj \"drug traffick*\") (title adj/stemming \"drug war\") (title adj \"drug trafficking\") (title adj/stemming \"illegal drug\") (title adj \"war on drugs\") (or/count>3 (body adj \"Drug Enforcement Administration\") (body adj \"D.E.A.\") (body adj/stemming \"drug killing\") (body adj/stemming \"drug traffick\") (body adj \"drug trafficking\") (body adj/stemming \"drug crime\") (body adj/stemming \"drug gang\") (body adj/stemming \"drug offender\") ) (and (title any \"Duterte\") (or (body any \"drug drugs narcotic narcotics\") (body adj \"anti-drug\") (body adj \"anti-narcotic\") (body adj \"anti-drugs\") (body adj \"anti-narcotics\") ) ) (and (title any \"cannabis cocaine crack drug drugs heroin marijuana meth PCP pot narcotic narcotics\") (text_content any/stemming \"abuse cartel crime dealer gang overdose rehab prison seize seizure sell sentence sentencing sold smuggle\") ) (prox/unit=sentence/distance=1 (body any \"Duterte Duterte's\") (body any \"anti-drug anti-drugs anti-narcotic anti-narcotics drug drug narcotic narcotics\") ) (prox/unit=sentence/distance=1 (body any \"drug drugs\") (body any \"sentence sentencing\") ) (prox/unit=sentence/distance=1 (body any \"marijuana\") (body any \"illegal legalization legalize\") ) ) (not (text_content any \"biotech cancer healthcare medical medicine Pfizer pharma pharmaceutical\") // excluding news summaries and schedules from reuters corpus // (title adj \"News Summary\") (title adj \"News Schedule\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499971727026, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000096", 
+      "topicName": "drug trafficking", 
+      "uid": "", 
+      "updatedAt": 1499971726884
+    }, 
+    {
+      "createdAt": 1498756013383, 
+      "group": [], 
+      "id": "595533ada7b11b0001cae314", 
+      "name": "Diseases and Conditions - 2000446", 
+      "query": "(and (or (title any \"alzheimer's bubonic cancer disease diseases diabetes flu hiv influenza superbug superbugs zika\") (title any/literal \"AIDS\") (title adj \"avian flu\") (title adj \"avian influenza flu\") (title adj \"binge-eating\") (title adj \"bird flu\") (title adj \"heart disease\") (body adj \"avian flu\") (body adj \"the plague\") ) (not (title = \"summary\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963138052, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000446", 
+      "topicName": "diseases and conditions", 
+      "uid": "", 
+      "updatedAt": 1499963137939
+    }, 
+    {
+      "createdAt": 1498752833790, 
+      "group": [], 
+      "id": "59552741a7b11b0001cae313", 
+      "name": "Real Estate - 20000241", 
+      "query": "(and (or (title = \"eviction\") (title = \"housing\") (title = \"HUD\") (title = \"mortgage\") (title = \"property\") (title = \"rent\") (title adj \"childhood home\") (title adj \"estate agent\") (title adj \"home price*\") (title adj \"new homes*\") (title adj \"office boom\") (title adj \"real estate\") (title adj \"flats boom\") (or/count>3 (text_content adj \"real estate\") (text_content adj \"property market\") ) (body = \"housebuilder*\") (text_content adj \"home prices\") (text_content adj \"home sales\") (text_content adj \"housing market\") (text_content adj \"new-home sales\") (body adj \"over land use\") (body adj \"hot property market\") (body adj \"long-term accommodation\") ) (not (title adj \"wrapup\") ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499970201099, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000241", 
+      "topicName": "real estate", 
+      "uid": "", 
+      "updatedAt": 1499970200968
+    }, 
+    {
+      "createdAt": 1498749688213, 
+      "group": [], 
+      "id": "59551af8a7b11b0001cae312", 
+      "name": "Censorship - 20000588", 
+      "query": "(and (or (title = \"censor*\") (title = \"censorship\") (or/count>=3 (body = \"censor*\") ) (and (text_content adj \"Communications Decency Act\") (text_content adj \"legal shield\") ) (and (text_content any \"blacklist\") (text_content any \"censor\") ) (and (body any/literal \"Backpage.com\") (or (text_content adj \"supreme court\") (text_content adj \"Senate subcommittee\") ) (or (text_content any \"censor censored censoring censorship\") (text_content adj \"free speech\") ) ) (and (or (text_content any \"china iran korea korean russia\") (text_content adj \"north korea\") ) (or (prox/unit=sentence/distance=1 (body any \"blocked censor* restrict*\") (body any \"cyberauthority internet web\") ) (prox/unit=sentence/distance=1 (body any \"blacklist*\") (body any \"author* writer*\") ) ) ) ) (not (or (title = \"summary\") (title = \"schedule\") (title = \"breivik\") (text_content adj \"foreign investment\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499970095166, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000588", 
+      "topicName": "censorship", 
+      "uid": "", 
+      "updatedAt": 1499970095036
+    }, 
+    {
+      "createdAt": 1498749357307, 
+      "group": [], 
+      "id": "595519ada7b11b0001cae310", 
+      "name": "Retirement - 20000531", 
+      "query": "(and (or (title = \"retirement\") (title = \"pension\") (title = \"pensioners\") (title = \"elderly\") (body = \"aarp\") (body adj \"ageing population\") (body adj \"pension system\") (or/count>3 (text_content = \"retirement\") ) ) (not (or (title = \"summary\") (title = \"cricket\") (title = \"athletics\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499970078776, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000531", 
+      "topicName": "retirement", 
+      "uid": "", 
+      "updatedAt": 1499970078646
+    }, 
+    {
+      "createdAt": 1498749141770, 
+      "group": [], 
+      "id": "595518d5a7b11b0001cae30f", 
+      "name": "Employment Statistics - 20000365", 
+      "query": "(and (or (title adj \"employment statistics\") (title adj \"job growth\") (title adj \"employment growth\") (title adj \"jobless claims\") (title adj \"jobs report\") (title adj \"unemployment rate\") (title adj \"jobs data\") (body adj \"employment statistics\") (body adj \"job growth\") (body adj \"employment growth\") (body adj \"jobless claims\") (body adj \"jobs report\") (body adj \"unemployment rate\") ) (not (or (title = \"summary\") (title = \"schedule\") (title = \"bipartisan\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963049837, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000365", 
+      "topicName": "employment statistics", 
+      "uid": "", 
+      "updatedAt": 1499963049742
+    }, 
+    {
+      "createdAt": 1498749023822, 
+      "group": [], 
+      "id": "5955185fa7b11b0001cae30e", 
+      "name": "Nuclear Power - 20000265", 
+      "query": "(and (or (title = \"reactors\") (title adj \"nuclear power\") (title adj \"nuclear deal\") (\"fukushima\") (\"stuxnet\") (body = \"AREVA\") (body adj \"nuclear power\") (body adj \"nuclear waste\") (body adj \"nuclear deal\") (body adj \"nuclear market\") (body adj \"nuclear agreement\") (body adj \"atomic energy\") (body adj \"nuclear energy\") (body adj \"nuclear reactor\") (body adj \"nuclear output\") ) (not (or (title = \"summary\") (title = \"schedule\") (title = \"manning\") (title = \"aseman\") (title = \"neutrality\") (title adj \"first jet\") (title adj \"western plane\") (title adj \"top jobs\") (body adj \"power strategies\") ) ) )", 
+      "schemas": [
+        "591f072930c49e00011de8ec"
+      ], 
+      "status": "submitted", 
+      "submittedAt": 1499963059913, 
+      "taxonomy": "5901b9e5c41479000146ced2", 
+      "topicId": "medtop:20000265", 
+      "topicName": "nuclear power", 
+      "uid": "", 
+      "updatedAt": 1499963059784
+    }
+  ]
+}
+
