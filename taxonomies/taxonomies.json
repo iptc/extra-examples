@@ -1,0 +1,17 @@
+{
+  "taxonomies": [
+    {
+      "id": "5901b9e5c41479000146ced2", 
+      "language": "english", 
+      "name": "IPTC Media Topics", 
+      "topics": 1106
+    }, 
+    {
+      "id": "5901b9ebc41479000146ced3", 
+      "language": "german", 
+      "name": "IPTC Media Topics", 
+      "topics": 1080
+    }
+  ]
+}
+
