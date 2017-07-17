@@ -83,7 +83,20 @@ In EXTRA there are two schemas one for articles from Thomson Reuters and one for
 
 ## Corpora
 
-To index documents into EXTRA for developement and testing of rules follow the guide [here](https://github.com/iptc/extra-examples/tree/master/corpora).
+To create a new corpus that follows a specific schema and its documents are annotated with the topics of a specific taxony:
+
+**POST** */corpora*
+
+```json
+{
+  "name": "Apa Corpus",
+  "language": "german",
+  "schemaId": "591f070c30c49e00011de8eb" ,
+  "taxonomyId": "5901b9ebc41479000146ced3"
+}
+```
+
+To index documents, for developement and testing of rules, into the newly created corpus, follow the guide [here](https://github.com/iptc/extra-examples/tree/master/corpora).
 
 ## Rules
 
@@ -107,4 +120,5 @@ The rules developed during EXTRA project can be found [here](https://github.com/
 ## Contact for further details about the project
 
 Technical details: Manos Schinas (manosetro@iti.gr), Symeon Papadopoulos (papadop@iti.gr)
+
 Project as a whole: [IPTC](https://iptc.org) (office@iptc.org)
