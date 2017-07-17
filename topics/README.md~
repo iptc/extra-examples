@@ -19,6 +19,11 @@ For each of these sets the topics provided in two form: a) a json file having th
 }
 ```
 and b) a text file with each topic in a separate line of the file.
+
+
+
+Let's say we want to create the English version of Media Topics taxonomy. First we have to create the corresponding taxonomy:
+
 The following python script reads the txt file, line by line, and creates a topic for each line by call the corresponding POST method:
 
 ```python
