@@ -1,0 +1,33 @@
+{
+  "api" : "http://xxx.xxx.xxx.xxx:8888/extra/api",
+  "taxonomies": [
+    {
+      "name": "IPTC Media Topics",
+      "language": "english",
+      "topics_file" : "topics/IPTC-Media-Topics-english.txt",
+      "rules_file":"rules/IPTC-Media-Topics-english.txt",
+      "corpora": [
+        {
+          "corpus_name": "Reuters",
+          "language": "english",
+          "schema" : {"fields":[{"hasParagraphs":false,"hasSentences":true,"name":"title","textual":true},{"hasParagraphs":true,"hasSentences":true,"name":"body","textual":true},{"hasParagraphs":false,"hasSentences":false,"name":"id","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"slugline","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"versionCreated","textual":false}],"language":"english","name":"Reuters Schema"},
+          "documents_file" : ""
+        }
+      ]
+    },
+    {
+      "name": "IPTC Media Topics",
+      "language": "german",
+      "topics_file" : "topics/IPTC-Media-Topics-german.txt",
+      "rules_file":"rules/IPTC-Media-Topics-german.txt",
+      "corpora": [
+        {
+          "corpus_name": "APA",
+          "language": "german",
+          "schema":{"fields":[{"hasParagraphs":false,"hasSentences":true,"name":"title","textual":true},{"hasParagraphs":false,"hasSentences":true,"name":"subtitle","textual":true},{"hasParagraphs":true,"hasSentences":true,"name":"body","textual":true},{"hasParagraphs":false,"hasSentences":false,"name":"id","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"slugline","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"versionCreated","textual":false}],"language":"german","name":"Apa Schema"},
+          "documents_file" : ""
+        }
+      ]
+    }
+  ]
+}
