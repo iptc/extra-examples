@@ -102,3 +102,9 @@ To create a new rule for a given taxonomy and a topic within that taxonomy:
 
 The taxonomy id and the topic id must correspond to resources that have already created into the platform.
 The rules developed during EXTRA project can be found [here](https://github.com/iptc/extra-examples/tree/master/topics). To insert them into EXTRA use the script and follow the corresponding guide [here](https://github.com/iptc/extra-examples/tree/master/rules).
+
+
+## Contact for further details about the project
+
+Technical details: Manos Schinas (manosetro@iti.gr), Symeon Papadopoulos (papadop@iti.gr)
+Project as a whole: [IPTC](https://iptc.org) (office@iptc.org)
