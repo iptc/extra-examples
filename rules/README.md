@@ -38,10 +38,10 @@ with open(input_file) as f:
             logging.error("[POST_RULE]Received non 200 response. Got {}".format(post_resp.status_code))
 ```
 
-To import the rules run the [python script] :
+To import the rules run the [python script](https://github.com/iptc/extra-examples/blob/master/rules/insert_rules.py):
 
 ```sh
 $python insert_rules.py IPTC-Media-Topics-english.txt http://xxx.xxx.xxx.xxx:8888/extra/api taxonomy_id
 ```
 
-You should specify the file containing the rules and also the entry point of EXTRA API (e.g. http://xxx.xxx.xxx.xxx:8888/extra/api). Also the id of the taxonomy created before must be specified as the third parameter of the script. 
+You should specify the file containing the rules and also the entry point of EXTRA API (e.g. http://xxx.xxx.xxx.xxx:8888/extra/api). Also the id of the taxonomy created before must be specified as the third parameter of the script.
