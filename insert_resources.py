@@ -49,6 +49,19 @@ for taxonomy_params in params['taxonomies']:
                 schema_id = post_resp.json()['id']
                 corpus = {"name": corpus_params["corpus_name"], "language": corpus_params["language"], "schemaId": schema_id, "taxonomyId": taxonomy_id}
                 post_resp = requests.post((api + "/corpora"), data=json.dumps(corpus), headers={'Content-Type': 'application/json'})
+                if post_resp.status_code != 201:
+                    logging.error("[POST_CORPUS] Received non 201 response. Got {}".format(post_resp.status_code))
+                else:
+                    corpus_id = post_resp.json()['id']
 
-                documents_file = corpus_params["documents_file"]
-                #if os.path.exists(documents_file):
+                    documents_file = corpus_params["documents_file"]
+                    if os.path.exists(documents_file):
+                        with open(documents_file) as f:
+                            for line in f:
+                                document = json.loads(line)
+                                url = host + '/corpora/' + corpus_id + '/documents'
+                                post_resp = requests.post(url, data=json.dumps(document), headers={'Content-Type': 'application/json'})
+                                if post_resp.status_code != 201:
+                                    logging.error("[POST_DOCUMENT] Received non 20` response. Got {}".format(post_resp.status_code))
+                                else:
+                                    logging.info(post_resp.content)

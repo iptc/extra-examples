@@ -11,6 +11,13 @@ See the other repositories of the IPTC EXTRA project:
 
 There are five types of resources: rules, schemas, taxonomies, topics and corpora of documents. After a successful deployment of EXTRA Toolkit, following the guide you can find in the [extra-ext](https://github.com/iptc/extra-ext) repository, these objects should be inserted into the platform.
 
+**Note!** You can import all the resources by running [this](https://github.com/iptc/extra-examples/blob/master/insert_resources.py) python script.
+
+```sh
+$python insert_resources.py params.json
+```
+The only change you need to make is to add the directory of the documents (`documents_file`) in the [params.json](https://github.com/iptc/extra-examples/blob/master/params.json) file. To get the document please fill the form you can find [here](https://github.com/iptc/extra-examples/tree/master/corpora).  
+
 ## Taxonomies and Topics
 In the current version of EXTRA, there are two taxonomies with their corresponding topics. More specifically, the two taxonomies are [IPTC's Media Topics](https://github.com/iptc/extra-ext) in english and german respectively.
 
