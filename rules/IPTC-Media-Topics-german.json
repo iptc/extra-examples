@@ -1,252 +1,216 @@
 {
   "rules": [
     {
-      "id": "594fe5be2ab79c0001b80e84", 
       "name": "Act of terror/Terroranschlag - 20000053 - Final", 
       "query": "(or (title any/stemming \"Attentat Attent\u00e4ter Anschlag Anschlagversuch Doppelanschlag Sprengstoffg\u00fcrtel Terroranschlag\") (and (\"Anschlag\") (or (text_content adj \"Charlie Hebdo\") (\"Hurghada\") ) ) )", 
       "topicId": "medtop:20000053", 
       "topicName": "Terroranschlag"
     }, 
     {
-      "id": "594fe2ec2ab79c0001b80e83", 
       "name": "Military equipment/Militaerische Ausruestung - 20000601 - Final", 
       "query": "(or // quite specific types military equipment, here mostly related to grenades // (body adj \"Flak-Granate\") (body adj \"Steyr-AUG-Sturmgewehren\") (text_content any/stemming \"Eihandgranate Fliegerbombe Gewehrgranate Granatenexport Luftabwehrsystem Splittergranate\") // tests of nuclear or h bombs // (\"Atombombentest\") (prox/unit=sentence/distance=1 (\"Wasserstoffbombe\") (\"Test\") ) (prox/unit=sentence/distance=1 (\"Wasserstoffbombe\") (\"getestet\") ) // specific treaties / laws related to military equipment // (body adj \"Comprehensive Nuclear-Test-Ban Treaty\") (\"Kriegsmaterialiengesetz\") // export of miliary equipment // (\"Waffenexporte\") )", 
       "topicId": "medtop:20000601", 
       "topicName": "Milit\u00e4rische Ausr\u00fcstung"
     }, 
     {
-      "id": "594fd11c2ab79c0001b80e82", 
       "name": "20000053", 
       "query": "(or (title any/stemming \"Attentat Attent\u00e4ter Anschlag Anschlagversuch Doppelanschlag Sprengstoffg\u00fcrtel Terroranschlag\") (and (\"Anschlag\") (or (text_content adj \"Charlie Hebdo\") (\"Hurghada\") ) ) )", 
       "topicId": "medtop:20000053", 
       "topicName": "Terroranschlag"
     }, 
     {
-      "id": "594fcc532ab79c0001b80e7c", 
       "name": "Pension/Rente - 20000532 - Final ", 
       "query": "(and (or // terms specifically related to pension // (title any/stemming \"Beamtenpension Frauenpension Invalidit\u00e4tspension Pension Pensionsdebatte Pensionistenpreisindex Pensionsdeal Pensionsantrittsalter Pensionskassen Pensionsreform Pensionsreserve Pensionssystem Pensionstransfer Vorsorgekasse\") (subtitle any/stemming \"Beamtenpension Frauenpension Invalidit\u00e4tspension Pension Pensionsdebatte Pensionistenpreisindex Pensionsdeal Pensionsantrittsalter Pensionskassen Pensionsreform Pensionsreserve Pensionssystem Pensionstransfer Vorsorgekasse\") ) (not (text_content any/stemming \"Hotel Tourismus\") ) )", 
       "topicId": "medtop:20000532", 
       "topicName": "Rente"
     }, 
     {
-      "id": "594fc54c2ab79c0001b80e74", 
       "name": "University/Universit\u00e4t - 20000407 - Final", 
       "query": "(or // words related to university in title and subtitle // (title any \"Architekturfakult\u00e4t Doktorat Ehrendoktorat Ehrendoktorrat Erasmus Privatuni Professur Uni Unis\") (title any/stemming \"Hochschulstudien Universit\u00e4t Universit\u00e4tsbibliothek Uniklinikum Universit\u00e4tsstudium Wissenschaftsrat\") (title adj/stemming \"universit\u00e4r\") (subtitle adj/stemming \"universit\u00e4r\") (subtitle any/stemming \"Universit\u00e4t Universit\u00e4tsstudium\") (title adj \"Uni-Zugang\") (title adj \"Uni-Budget\") // types of universities and research institutes // (title adj/stemming \"Technischen Unis\") (subtitle adj/stemming \"Technischen Unis\") (title adj \"Uni-Kliniken\") (subtitle adj \"Uni-Kliniken\") // specific universities and institutes // (text_content adj/stemming \"Internationalen Bodenseehochschule\") (text_content adj \"Johannes Kepler Universit\u00e4t\") (title adj \"Kunstuni Graz\") (subtitle adj \"Kunstuni Graz\") (text_content adj \"Kunstuniversit\u00e4t Graz\") (title adj/stemming \"Max Planck-Institut\") (subtitle adj/stemming \"Max Planck-Institut\") (title adj \"Med-Uni Graz\") (subtitle adj \"Med-Uni Graz\") (title adj \"TU Graz\") (subtitle adj \"TU Graz\") (title adj \"Universit\u00e4t Graz\") (subtitle adj \"Universit\u00e4t Graz\") // university grant fund // (text_content adj \"Wiener Wissenschafts-, Forschungs- und Technologiefonds\") )", 
       "topicId": "medtop:20000407", 
       "topicName": "Universit\u00e4t"
     }, 
     {
-      "id": "594fb9b02ab79c0001b80e70", 
       "name": "Unions/Gewerkschaft - 20000536 - Final", 
       "query": "(and (or // German word for union in title or subtitle // (title any/stemming \"Gewerkschaft\") (subtitle any/stemming \"Gewerkschaft\") // specific unions // (title any \"\u00d6GB\") (subtitle any \"\u00d6GB\") (title adj \"Spielergewerkschaft VdF\") (text_content adj \"Gewerkschaft Bau-Holz\") (text_content adj \"Gewerkschaft der Privatangestellten\") (text_content adj \"GPA-djp\") (prox/unit=sentence/distance=1 (\"\u00c4rztegewerkschaft\") (\"Asklepios\") ) ) // exclusion terms, mainly related to general news // (not (title adj \"APA Medien News\") (title adj \"Sieben Tage Wirtschaft\") ) )", 
       "topicId": "medtop:20000536", 
       "topicName": "Gewerkschaft"
     }, 
     {
-      "id": "594fb3652ab79c0001b80e6e", 
       "name": "Awards/Auszeichnung und Preis - 20000498 - Final", 
       "query": "(or // examples of awards // (text_content adj \"Amadeus Austrian Music Awards\") (text_content adj \"Kunstpreis des Stifts Klosterneuburg\") (text_content adj \"Presidential Early Career Awards for Scientists and Engineers\") (text_content adj \"Sony World Photography Awards\") (text_content adj \"Statuette des Heiligen Leopold in Bronze\") (text_content adj \"Wappenmedaille in Gold\") (text_content adj/stemming \"Goldenen Ehrenzeichen f\u00fcr Verdienste um die Republik\") (title adj \"Austrian Fashion Awards\") (title adj \"Autorenpreis der Theaterallianz\") (title adj \"Ballon d'Or\") (title adj \"Bank Austria Kunstpreis\") (title adj \"Deutscher Medienpreis\") (title adj \"Ehrenzeichen des Landes Tirol\") (title adj \"ERC-Preistr\u00e4ger\") (title adj \"Europasportler des Jahres\") (title adj \"FIFA-Gala\") (title adj \"Forbes-30 unter 30\") (title adj \"Gatterer-Preis\") (title adj \"Heimo-Erbse-Preis\") (title adj \"Heiner-Carow-Preis\") (title adj \"Herbert-Walther-Preis\") (title adj \"H\u00f6rspiel des Jahres\") (title adj \"Kreisky-Preis\") (title adj \"Oscar-Verleihung\") (title adj \"Pressefotos des Jahres\") (title adj \"Pritzker-Preis\") (title adj \"Rothschild-Preis f\u00fcr Wirtschaftspublizistik\") (title adj \"Schandfleck des Jahres\") (title adj \"Schauspieler des Jahres\") (title adj \"Schweizer Filmpreis\") (title adj \"Schwimmer des Jahres\") (title adj \"Teddy Award\") (title adj \"Turnsportler des Jahres\") (title adj \"UEFA-Team des Jahres\") (title adj \"UNESCO-Welterbe\") (title adj \"Vogelsang-Staatspreis\") (title adj \"Weltfu\u00dfballer des Jahres\") (title adj \"Weltfu\u00dfballer-Gala\") (title adj \"Wissenschafter des Jahres\") (title adj/stemming \"Athleten des Jahres\") (title adj/stemming \"Consolidator-Preis\") (title adj/stemming \"Deutscher Krebspreis\") (title adj/stemming \"Ehrenmitglied der Kunstuni Graz\") (title adj/stemming \"Golden Globes\") (title adj/stemming \"Gro\u00dfen Schauspielpreis\") (title adj/stemming \"internationaler Wettbewerb zur politischen Bildung\") (title adj/stemming \"Kinder- und Jugendbuchpreise\") (title adj/stemming \"Oscar-Nominierungen\") (title adj/stemming \"\u00d6sterreichische Kunstpreise\") (title adj/stemming \"\u00d6sterreichischer Filmpreis\") (title adj/stemming \"Radiopreise der Erwachsenenbildung\") (title any \"Friedensnobelpreis Grammy Grammys Mozartwettbewerb Oscars Weltfu\u00dfballer\") )", 
       "topicId": "medtop:20000498", 
       "topicName": "Auszeichnung und Preis"
     }, 
     {
-      "id": "594b9fba30c49e00019202f7", 
       "name": "Fraud/Betrug - 20000097 - Final", 
       "query": "(or // sufficiently specific terms in title // (title any/stemming \"Betrug Betrugsfall Betrugsprozess Betrugsverdacht Betrugsversuch Identit\u00e4tsdieb Kreditkartenbetrug Neffentrickbetr\u00fcger Telefonbetrug Trickbetr\u00fcger Wettbetrug Untreue\") (title adj \"Neffentrick-Opfer\") (subtitle any \"Falschgeld Schwindel\") (text_content adj/stemming \"gewerbsm\u00e4\u00dfigen Betruges\") // terms related to fraud that need qualification // (and (text_content any/stemming \"F\u00e4lschung\") (text_content any/stemming \"Geldschein\") ) (or/countunique>1 (\"Betrug\") (\"Betr\u00fcger\") (\"Betr\u00fcgerin\") (text_content adj \"Fake-Internetshop\") (text_content adj \"Fake-Shop\") (text_content adj \"Untreue-Prozess\") (text_content adj \"Wett-Manipulation\") (text_content adj/stemming \"Love-Scam\") (text_content adj/stemming \"Love-Scam-F\u00e4lle\") (text_content any/stemming \"Abgabenhinterziehung\") (text_content any/stemming \"Autoschieberbande\") (text_content any/stemming \"betrogen\") (text_content any/stemming \"Betr\u00fcgerei\") (text_content any/stemming \"betr\u00fcgerisch\") (text_content any/stemming \"Betrugsfall\") (text_content any/stemming \"Betrugsprozess\") (text_content any/stemming \"Betrugsverdacht\") (text_content any/stemming \"Falschgeldstatistik\") (text_content any/stemming \"F\u00e4lschung\") (text_content any/stemming \"Finanzpolizisten\") (text_content any/stemming \"Geldw\u00e4schevorwurf\") (text_content any/stemming \"Heiratsschwindler\") (text_content any/stemming \"Identit\u00e4tsdieb\") (text_content any/stemming \"Identit\u00e4tsbetr\u00fcger\") (text_content any/stemming \"Kreditkartenbetrug\") (text_content any/stemming \"Neffentrick\") (text_content any/stemming \"Neffentrickbetr\u00fcger\") (text_content any/stemming \"Pfusch\") (text_content any/stemming \"Scheinidentit\u00e4t\") (text_content any/stemming \"Schwarzgeldzahlungen\") (text_content any/stemming \"Schwindel\") (text_content any/stemming \"Telefonbetrug\") (text_content any/stemming \"Trickbetr\u00fcger\") (text_content any/stemming \"unterschlagen\") (text_content any/stemming \"Untreue\") (text_content any/stemming \"Urkundenf\u00e4lschung\") (text_content any/stemming \"Wettbetrug\") (text_content any/stemming \"Wettmanipulation\") (text_content any/stemming \"Zechprellerei\") (prox/unit=sentence/distance=1 (body any/stemming \"falsch\") (body any/stemming \"Kreditkarte\") ) ) )", 
       "topicId": "medtop:20000097", 
       "topicName": "Betrug"
     }, 
     {
-      "id": "5946f08b30c49e00019202ec", 
       "name": "Employment statistics/Arbeitsmarktdaten - 20000365 - Final", 
       "query": "(and (or/countunique>3 (title any/stemming \"Arbeitslose\") (title = \"Arbeitslosigkeit\") (title any \"Arbeitsmarkt\") (text_content any/stemming \"Arbeitslosenzahl\") (text_content any/stemming \"Ausbildungserhebung\") (text_content any/stemming \"Jobchancen\") (text_content any/stemming \"Wachstumsperspektiven\") (text_content any/stemming \"Wirtschaftsforschungsinstitut\") (\"AMS\") (\"Arbeitskr\u00e4fteerhebung\") (\"Arbeitslosenquote\") (\"Arbeitslosenrate\") (\"Arbeitslosigkeit\") (\"Arbeitsmarktdaten\") (\"Arbeitsmarktintegration\") (\"Arbeitsmarktintegration\") (\"Arbeitsmarktservice\") (or (\"Statistik\") (\"Prozent\") ) (prox/unit=sentence/distance=1 (\"steigt\") (\"Arbeitslosigkeit\") ) ) )", 
       "topicId": "medtop:20000365", 
       "topicName": "Arbeitsstatistik"
     }, 
-    {
-      "id": "5946bb3930c49e00019202eb", 
+    { 
       "name": "Bankruptcy/Insolvenz - 20000174 - Final", 
       "query": "(or (and // entities that can go bankrupt // (or (text_content adj \"Fu\u00dfball-Zweitligist\") (text_content any/stemming \"Academy Akadmie Baufirma Baufirmen Handelskette Handelsunternehmen Lebensmittelhandelskette Modeh\u00e4ndler Supermarktkette Tochterunternehmen Unternehmen\") ) // general terms related to bankruptcy // (or (text_content any/stemming \"Ausfallwahrscheinlichkeit Firmenpleite insolvent Insolvenz Konkurs pleite pleitegegangen Sanierungsplan\") ) ) // specific terms related to bankruptcy // (or (text_content any \"Insolvenzrahmen Konkursverfahren\") (text_content any/stemming \"Insolvenzantrag Insolvenzursache Insolvenzverwalter Insolvenzverwalterin Masseverwalter Privatinsolvenz Privatkonkurs\") ) )", 
       "topicId": "medtop:20000174", 
       "topicName": "Insolvenz"
     }, 
     {
-      "id": "594447c430c49e00019202e6", 
       "name": "Health insurance/Zusatzversicherung - 20000483 - Final", 
       "query": "(and (or/countunique>1 // relevant types of insurance // (or (\"Gesundheitsversicherung\") (\"Pflichtversicherung\") ) // specific insurance benefits // (or (body adj \"Hepatitis-Pr\u00e4parat\") (body adj \"Magnetresonanz-Untersuchungen\") (body adj \"Rheumatologen-Termin\") (text_content any/stemming \"Vorsorgeuntersuchung\") (prox/unit=sentence/distance=1 (\"Versorgung\") (\"Bev\u00f6lkerung\") ) ) // financial terms related to health insurance // (or (text_content any/stemming \"Ambulanzgeb\u00fchr Medikamentenkosten Umlageverfahren\") ) // contracts related to health insurance // (or (text_content adj/stemming \"Rahmen-Pharmavertrag\") (text_content adj/stemming \"Pharma-Rahmenvertrag\") ) (or (body adj \"Elektronische Gesundsheitsakte\") ) // entities // (or (text_content adj \"\u00d6sterreichischen Schmerzgesellschaft\") (text_content any/stemming \"Versicherungsanstalt\") ) // other terms // (or (\"Gesundheitswoche\") ) ) )", 
       "topicId": "medtop:20000483", 
       "topicName": "Zusatzversicherung"
     }, 
     {
-      "id": "5942e8b630c49e00019202e1", 
       "name": "Film/Cinema - 20000005 - Final", 
       "query": "(or (title = \"Oscars\") // cinema awards // (text_content adj \"Academy Award\") (text_content adj \"Oscar-Verleihung\") (text_content adj \"Tiger Award\") (text_content adj \"Teddy Award\") (\"Berlinale\") // action movie franchise // (text_content adj \"Action-Reihe\") (and (or // relation to terms including German word for cinema // (text_content any \"Kino Kinofilm Kinopremiere\") ) // cinema-related terms // (or (text_content any/stemming \"Dokumentarfilm Drehbuch Drehb\u00fccher Filmadaption Filmfestival Filmfestspiel Filmkomponist Filmmusik Filmreihe filmschaffend Oscar Regie Regisseur\") ) ) )", 
       "topicId": "medtop:20000005", 
       "topicName": "Film"
     }, 
     {
-      "id": "59357dc52ab79c000161bc7c", 
       "name": "Medical research/Medizinische Forschung - 20000737 - Final", 
       "query": "(and (or (or // research- and hospital-related // (prox/unit=sentence/distance=1 (\"Resistenzen\") (\"Antibiotika\") ) (text_content adj \"Arachidonyl-Glyzerol-Spiegel\") (text_content adj \"Austrian Stroke Prevention Study\") (text_content adj \"Biotech-Medikament\") (text_content adj \"Deutschen Krebspreis\") (text_content adj \"Medizinische Wissenschaft\") (text_content adj \"Monoglyzerid-Lipase\") (text_content adj \"Phase-I-Untersuchungen\") (text_content adj \"Smart Drugs\") (text_content adj \"Symposiums zur Suchterkrankung\") (text_content all/stemming \"Erforschung Erkrankung\") (text_content all/stemming \"Wissenschaft Medizin\") (text_content any/stemming \"Elementarteilchendetektor Impfplan Molekularbiologe Organerhalt Radiologenkongress\") (text_content any \"Bioethikkommission Doppelorgantransplantation Herzschrittmacher Krankenhaushygiene Krebstherapie Mammografieprogramm Medikationsmanagement Neurowissenschafter Onkologie Tropenmedizin Weltkrebstag\") ) (or/countunique>1 // general terms // (text_content any/stemming \"Forschung Studie\") // disease-related // (text_content adj \"Zika-Virus-Infektion\") (text_content any/stemming \"Leuk\u00e4mieerkrankung Lungenkarzinom Suchterkrankung\") (text_content any \"Cholera Diabetes Herzinfarkt Masern Mikrozephalie Prostatakarzinom Psoriasis Schlaganfallgefahr\") (\"Darmkrebsrisiko\") (\"Krebskranke\") // related to immune system // (text_content adj \"T-Zell-Rezeptoren\") (text_content any \"Acinetobacter Antik\u00f6rper Immunsystem Immunabwehr Krankenhausinfektion\") // bacteria- or virus-related // (text_content adj \"Acinetobacter-Keimes\") (text_content adj \"Campylobacter-Keime\") (text_content adj \"multiresistenten Keim\") // hospitals or medical institutes // (text_content adj \"Europ\u00e4ischen Zentrums f\u00fcr Krankheitskontrolle\") (text_content adj \"Med-Uni\") (text_content adj \"Medizin-Fakult\u00e4t\") (text_content adj \"MedUni Wien\") (text_content adj \"Wiener Wilhelminenspitals\") (text_content any/stemming \"Universit\u00e4tsklinik\") ) ) (not (title adj \"W I S S E N S C H A F T - B I L D U N G - TAGESPROGRAMM\") (text_content any/stemming \"Aufnahmeverfahren\") ) )", 
       "topicId": "medtop:20000737", 
       "topicName": "Medizinische Forschung"
     }, 
     {
-      "id": "59356bdf2ab79c000161bc77", 
       "name": "Government budget/Staatshaushalt - 20000607 - Final", 
       "query": "(or (or (text_content adj \"Bund der Steuerzahler\") (title all \"Bundesheer Budget\") (title = \"Budgetdisziplin\") ) (or/countunique>1 (title = \"Steuerreform\") (prox/unit=sentence/distance=1 (\"Einnahmen\") (\"Staates\") ) (title any \"Budget\") (text_content adj \"Einkommenssteuer-System\") (text_content adj \"Kalte Progression\") (\"Budgetsprecher\") (\"Budgetziele\") (\"Bundesbudget\") (\"Bundeshaushalt\") (\"Staatsbudget\") (\"Steuergerechtigkeit\") (\"Steuerzahler\") ) )", 
       "topicId": "medtop:20000607", 
       "topicName": "Staatshaushalt"
     }, 
     {
-      "id": "593568dd2ab79c000161bc75", 
       "name": "National elections/Parlamentswahlen - 20000579 - Final", 
       "query": "(or (title adj \"Irland-Wahl\") (title adj \"Slowakei-Wahl\") (title adj \"US-Wahlen\") (and (or (title any/stemming \"kroatisch mazedonisch\") (title any/stemming \"Afghanistan Iran Kroatien Mazedonien Montenegro Serbien Slowakei Uganda Vanuatu\") ) (or (title any/stemming \"Neuwahl Parlamentswahl Regierungsbildung Regierungsteilnahme \u00dcbergangsregierung Wahl Wahldatum Wahlergebnis Wahlkommission Wahltermin Wahlvoraussetzung\") (subtitle any/stemming \"Neuwahl Parlamentswahl Regierungsbildung Regierungsteilnahme \u00dcbergangsregierung Wahl Wahldatum Wahlergebnis Wahlkommission Wahltermin Wahlvoraussetzung\") ) ) )", 
       "topicId": "medtop:20000579", 
       "topicName": "Bundestagswahl"
     }, 
     {
-      "id": "593560c92ab79c000161bc72", 
       "name": "Fire/Feuer - 20000150 - Final", 
       "query": "(or // non-specific terms // (or/countunique>1 // individual any-stemming statements to be able to trigger countunique more than once // (\"Berufsfeuerwehr\") (\"Brand\") (\"Brandstiftung\") (\"Brandursache\") (\"Einsatzfahrzeug\") (\"Feuer\") (\"Feuerwehr\") (\"Verbrennungen\") ) (or // fire in title // (title = \"Brand\") (title = \"Feuerwehr\") // specific types of fire // (text_content any \"Kleinbrand Wohnhausbrand Wohnungsbrand\") // other specific terms // (text_content adj \"Waldbrand-Alarm\") (text_content any \"Brandstifter Einsatzjacke Rauchgas Rauchgasvergiftung Serienbrandstifter Zigarettenglut\") ) )", 
       "topicId": "medtop:20000150", 
       "topicName": "Feuer"
     }, 
     {
-      "id": "59355ca72ab79c000161bc70", 
       "name": "Antitrust issue/Kartellfragen - 20000123 - Final", 
       "query": "(or (title any/stemming \"Bundeswettbewerbsbeh\u00f6rde Bundeswettbewerbbeh\u00f6rde BWB Kartellstrafe Wettbewerbsbeh\u00f6rde Wettbewerbsh\u00fcter\") (and (text_content any \"Konsortium \u00dcbernahme Wettbewerbsbedenken\") (text_content any \"Bundeswettbewerbsbeh\u00f6rde BWB\") ) )", 
       "topicId": "medtop:20000123", 
       "topicName": "Kartellfragen"
     }, 
     {
-      "id": "593557a42ab79c000161bc6e", 
       "name": "Sexual assault/Sexuelle Gewalt - 20000085 - Final", 
       "query": "(or (or/countunique>3 (text_content adj/stemming \"geschlechtlicher N\u00f6tigung\") (\"Anklage\") (\"Anzeige\") (\"Attacke\") (\"attackiert\") (\"bedr\u00e4ngt\") (\"erpresst\") (\"Kinderporno\") (\"minderj\u00e4hrig\") (\"Missbrauch\") (\"missbraucht\") (\"Obsz\u00f6nit\u00e4t\") (\"Opferschutz\") (\"Opferschutz\") (\"Pornofilme\") (\"Sex\") (\"Strafverfahren\") (\"Verd\u00e4chtiger\") (\"Vergewaltiger\") (\"Vergewaltigung\") (prox/unit=sentence/distance=1 (\"sexueller\") (\"Bel\u00e4stigung\") ) (prox/unit=sentence/distance=1 (\"sexuelle\") (\"Bel\u00e4stigung\") ) (prox/unit=sentence/distance=1 (\"sexuell\") (\"bel\u00e4stigt\") ) (prox/unit=sentence/distance=1 (\"Frau\") (\"bedr\u00e4ngt\") ) (prox/unit=sentence/distance=1 (\"unsittlichen\") (\"Ber\u00fchrungen\") ) (prox/unit=sentence/distance=1 (\"Ges\u00e4\u00df\") (\"betastet\") ) ) (or (text_content adj \"unsittlich ber\u00fchrt\") (\"P\u00e4dophilie\") (\"Silvesterattacken\") (\"vergewaltigt\") (\"vergewaltigen\") (prox/unit=sentence/distance=1 (\"\u00dcbergriffe\") (\"Frauen\") ) (prox/unit=sentence/distance=1 (\"bel\u00e4stigt\") (\"Frauen\") ) (prox/unit=sentence/distance=1 (\"sexuellen\") (\"Missbrauchs\") ) (prox/unit=sentence/distance=1 (\"sexuellen\") (\"\u00dcbergriff\") ) (prox/unit=sentence/distance=1 (\"sexueller\") (\"\u00dcbergriffe\") ) (prox/unit=sentence/distance=1 (\"sexueller\") (\"\u00dcbergriff\") ) (prox/unit=sentence/distance=1 (\"Rock\") (\"fassen\") ) ) )", 
       "topicId": "medtop:20000085", 
       "topicName": "Sexuelle Gewalt"
     }, 
     {
-      "id": "59354c8f2ab79c000161bc6c", 
       "name": "Drug trafficking/Drogenhandel - 20000096 - Final", 
       "query": "(or (or/countunique>2 // term drug trafficking or synonyms / near synonyms // (text_content any/stemming \"Dealer\") (text_content any/stemming \"Drogen\") (text_content any/stemming \"Drogendeal\") (text_content any/stemming \"Drogenhandel\") (text_content any/stemming \"Drogenh\u00e4ndler\") (text_content any/stemming \"Drogenmarkt\") (text_content any/stemming \"Drogenm\u00e4rkte\") (text_content any/stemming \"Drogenschmuggler\") (text_content any/stemming \"Suchtgift\") (text_content any/stemming \"Suchtgifthandel\") (text_content any/stemming \"Suchtgiftverk\u00e4ufen\") // drugs // (\"Cannabis\") (\"Haschisch\") (\"Heroin\") (\"Kokain\") (\"Marihuana\") (\"Phenetylamin\") // compound nouns related to drugs // (text_content any/stemming \"Cannabisbl\u00fcte\") (text_content any/stemming \"Cannabisharz\") (text_content any/stemming \"Cannabiskraut\") (text_content any/stemming \"Cannabisp\u00e4ckchen\") (text_content any/stemming \"Cannabispflanze\") (text_content any/stemming \"Cannabisstaude\") (text_content any/stemming \"Hanfplantage\") // terms related to police / judge activities // (text_content adj/stemming \"Drogen-Notf\u00e4lle\") (text_content adj \"Kokain-Fund\") (text_content any/stemming \"Drogenfund\") (text_content any/stemming \"Haftbefehl\") (text_content any/stemming \"Haftstrafe\") (text_content any/stemming \"Suchtgiftermittler\") (text_content any/stemming \"Suchtmittelsp\u00fcrhund\") (\"EMCDDA\") (text_content any/stemming \"Drogenbeobachtungsstelle\") ) )", 
       "topicId": "medtop:20000096", 
       "topicName": "Drogenhandel"
     }, 
     {
-      "id": "593546ca2ab79c000161bc69", 
       "name": "Environment/Umwelt - 06000000 - Final", 
       "query": "(or // non-specific terms // (or/countunique>1 (title adj \"VW-Abgasskandal\") (text_content adj \"VW-Skandal\") (text_content adj \"CO2-Aussto\u00df\") (prox/unit=sentence/distance=1 (\"Umwelt\") (\"Konsumentenschutz\") ) // individual any-stemming statements to be able to trigger countunique more than once // (text_content any/stemming \"Umweltminister\") (text_content any/stemming \"Umweltmesse\") (text_content any/stemming \"Umweltschutz\") (text_content any/stemming \"Umweltschutzma\u00dfnahmen\") (text_content any/stemming \"Abgaswert\") (text_content any/stemming \"Umweltsprecher\") (text_content any/stemming \"Umweltgesetzgebung\") (text_content any/stemming \"Umweltvertr\u00e4glichkeitspr\u00fcfung\") (text_content any/stemming \"Umweltausschuss\") (text_content any/stemming \"Umweltschutzorganisationen\") (text_content any/stemming \"Abgasaff\u00e4re\") (text_content any/stemming \"umweltsch\u00e4dlich\") (text_content any/stemming \"Emissionshandelssystem\") (text_content any/stemming \"Umwelteffekt\") (text_content any/stemming \"Umweltverbrauch\") (text_content any/stemming \"Abgasskandal\") (text_content any/stemming \"Naturkatastrophe\") (text_content any/stemming \"Weltrisikobericht\") (text_content any/stemming \"Naturgewalt\") (text_content any/stemming \"Umweltkommissar\") (text_content any/stemming \"Umweltprogramm\") (text_content any/stemming \"Umweltanwalt\") (text_content any/stemming \"Stromkennzeichnung\") (text_content any/stemming \"Umweltaktivist\") (text_content any/stemming \"Umwelthilfe\") (text_content any/stemming \"Abgasthematik\") (text_content any/stemming \"Risikoeinsch\u00e4tzung\") (text_content any/stemming \"Umweltinstitut\") (text_content any/stemming \"Grenzwert\") (text_content any/stemming \"umweltbelastend\") ) (or // terms in title or specific terms // (title any/stemming \"Abgastest\") (text_content adj \"Benefit Corporation\") (text_content adj \"B Impact Assessment\") (text_content adj \"Jane Goodall\") (text_content adj \"\u00f6kologische Kriterien\") (\"Anthropoz\u00e4n\") (\"Umwelts\u00fcnder\") (\"Donaudeklaration\") (prox/unit=sentence/distance=1 (\"klimafreundlich\") (\"Verkehr\") ) (and (text_content any/stemming \"\u00d6lbohrung\") (\"Referendum\") ) ) )", 
       "topicId": "medtop:06000000", 
       "topicName": "Umwelt"
     }, 
-    {
-      "id": "592dfd992ab79c000161bc5b", 
+    { 
       "name": "Taxation/Steuer - 20000620 - Final", 
       "query": "(or (or (title = \"Bankenabgabe\") (title = \"Finanzstrafbeh\u00f6rde\") (subtitle = \"Finanzstrafbeh\u00f6rde\") (title adj \"LKW-Maut\") (title = \"Registrierkassenpflicht\") (subtitle = \"Registrierkassenpflicht\") (title any/stemming \"Steuerbeh\u00f6rde\") (title = \"Steuerhinterziehung\") (\"Steuerquote\") (\"Steuereinnahmen\") ) (or/countunique>1 (text_content adj/stemming \"Anti-Steuerbetrugsma\u00dfnahmen\") (text_content adj/stemming \"Einkommenssteuer-System\") (text_content adj/stemming \"Einkommenssteuer-Stufen\") (text_content adj \"EU-Mautharmonisierung\") (text_content adj/stemming \"EU-Steuerkommissar\") (text_content adj/stemming \"kalten Progression\") (text_content adj \"Lkw-Mautpflicht\") (text_content adj/stemming \"Maut-Harmonisierung\") (text_content adj/stemming \"Mehrwertsteuer-Regel\") (text_content adj/stemming \"Mehrwertsteuer-Betrug\") (text_content adj/stemming \"MwSt-Regel\") (text_content adj/stemming \"\u00d6kostrom-F\u00f6rderung\") (text_content adj/stemming \"Steuervermeidungs-Richtlinie\") (text_content adj \"Tobin-Steuer\") (\"Bankenabgabe\") (\"Dienstwagenbesterung\") (\"Energiesteuerfreibetrag\") (\"Erbschaftssteuer\") (\"Finanzbeh\u00f6rden\") (text_content any/stemming \"Finanzpolizist\") (\"Finanzpolizei\") (\"Finanzsteuer\") (\"Finanzstrafbeh\u00f6rde\") (\"Finanztransaktionssteuer\") (\"Lohnsteuer\") (\"Lohnsteuerentlastung\") (\"Mehrwertsteuerbetrug\") (\"Maut\") (\"Mineral\u00f6lsteuer\") (\"Negativsteuer\") (\"Nichtbesteuerung\") (\"\u00d6kosteuer\") (text_content any/stemming \"\u00d6kostromgesetz\") (\"Reverse Charge\") (\"Schenkungssteuer\") (\"Schwarzarbeit\") (\"Sozialdumping\") (\"Steuerbaukasten\") (\"Steuerbeg\u00fcnstigung\") (\"Steuerbehandlung\") (\"Steuerbeh\u00f6rden\") (\"Steuerberater\") (\"Steuerbetrug\") (\"Steuerdeal\") (\"Steuerdokumente\") (\"Steuerentlastung\") (\"Steuerflucht\") (\"Steuergeld\") (\"Steuergerechtigkeit\") (\"Steuergesetz\") (\"Steuerkommissar\") (\"Steuermissbrauch\") (\"Steuermittel\") (\"Steueroasen\") (\"Steuerpflicht\") (\"Steuerpl\u00e4ne\") (\"Steuerplanung\") (\"Steuerrechner\") (\"Steuerreform\") (\"Steuerschuldnerschaft\") (\"Steuerschwellen\") (\"Steuersystem\") (\"Steuervermeidung\") (\"Steuerverschwendung\") (\"Steuerverwaltung\") (\"Steuervorteile\") (\"Steuerwettbewerb\") (\"Steuerzahler\") (\"Vorsteuerabzug\") (prox/unit=sentence/distance=1 (body = \"Besteuerung\") (body = \"Dieselkraftstoff\") ) (prox/unit=sentence/distance=1 (body = \"steuerlich\") (body = \"absetzbar\") ) (prox/unit=sentence/distance=1 (body = \"steuerlichen\") (body = \"Beg\u00fcnstigung\") ) (prox/unit=sentence/distance=1 (body = \"angemeldete\") (body = \"Erwerbst\u00e4tigkeit\") ) (prox/unit=sentence/distance=1 (body = \"Steuer\") (or (body any \"Alkohol Strom Zigaretten\") ) ) ) )", 
       "topicId": "medtop:20000620", 
       "topicName": "Steuern"
     }, 
     {
-      "id": "592dea4c2ab79c000161bc59", 
       "name": "Data protection/datenschutz - 20000627 - Final", 
       "query": "(or // all quite specific terms that are quite likely only to appear in the context of data protection // (prox/unit=sentence/distance=1 (body = \"Abkommen\") (or (body adj \"Privacy Shield\") (body adj \"Safe Harbor\") ) ) (text_content adj \"Datenschutz-Reform\") (text_content adj \"datenschutzrechtliche Grundlage\") (text_content adj \"personenbezogene Daten\") (text_content adj \"Handy-Standortdaten\") (text_content adj \"Recht auf Privatsph\u00e4re\") (text_content adj \"zentrales Kontenregister\") (text_content any \"Informationsfreiheitsgesetz Verkehrsdatenauskunft Vorratsdatenspeicherung\") (text_content any/stemming \"Datenschutzanliegen Datenschutzbeauftragte Datenschutzbeh\u00f6rde Datenschutzgedanke Datenschutzgruppe Datenschutzpaket Datenschutzrecht Datenschutzregelung\") // also interesting terms, in APA test corpera they had a negative impact on precision though // // ( \" Datenschutzgesetz \" ) // // ( body adj \" pers\u00f6nlichen Daten \" ) // // ( \" Datenschutz \" ) // )", 
       "topicId": "medtop:20000627", 
       "topicName": "Datenschutz"
     }, 
     {
-      "id": "592b56fd2ab79c000161bc50", 
       "name": "Immigration/Einwanderung - 20000771 - Final", 
       "query": "(or (text_content any \"Immigration Einwanderung Schengen Fl\u00fcchtling Fl\u00fcchtlinge\") )", 
       "topicId": "medtop:20000771", 
       "topicName": "Einwanderung"
     }, 
     {
-      "id": "59138df1adbe1d000132f257", 
       "name": "Computer crime/Computerkriminalitaet - 20000086 - Final", 
       "query": "(or (and // specific forms of attacks // (or (text_content adj/stemming \"Cyber-Attacke\") (text_content adj/stemming \"Cyber-Betr\u00fcger\") (text_content adj/stemming \"DDOS-Attacke\") (text_content any \"Cyberangriff Cyberattacke Cybermobbing Datendiebstahl\") ) // exclusion terms // (not (text_content = \"B\u00f6rse\") (title adj \"W I S S E N S C H A F T - B I L D U N G - TAGESPROGRAMM\") ) ) // terms related to a specific attack on an organization which need to appear in the same sentence // (prox/unit=sentence/distance=1 (\"FACC\") (\"Cyberangriff\") ) // terms related to a form of attack that appear in close proximity within the same sentence // (prox/unit=sentence/distance=1 (\"Missbrauch\") (\"Daten\") ) )", 
       "topicId": "medtop:20000086", 
       "topicName": "Computerkriminalit\u00e4t"
     }, 
     {
-      "id": "5910eec8a7b11b0001075fab", 
       "name": "Islam - 20000677 - Final", 
       "query": "(and (or (title any/stemming \"Burka\") (title any/stemming \"Islam\") (title any/stemming \"islamisch\") (title any/stemming \"Jihadist\") (or/countunique>1 (text_content adj \"Al-Azhar-Universit\u00e4t\") (text_content adj \"IS-K\u00e4mpfer\") (text_content adj \"Islamic Banking\") (text_content adj/stemming \"Islamischer Staat\") (text_content any/stemming \"Beschneidung\") (text_content any/stemming \"Islamgesetz\") (text_content any/stemming \"islamisch\") (text_content any/stemming \"Islamisierung\") (text_content any/stemming \"Jihadist\") (text_content any/stemming \"Moschee\") (text_content any/stemming \"Muslim\") (text_content any/stemming \"muslimisch\") (text_content any/stemming \"Schiiten\") (text_content any/stemming \"schiitisch\") (text_content any/stemming \"Sunnit\") (text_content any/stemming \"sunnitisch\") (text_content any/stemming \"Wahhabit\") (\"IGGi\u00d6\") ) ) // exclusion terms // (not (title adj \"Historisches Kalenderblatt\") (title adj \"Sieben Tage\") ) )", 
       "topicId": "medtop:20000677", 
       "topicName": "Islam"
     }, 
-    {
-      "id": "5910ebf4a7b11b0001075faa", 
+    { 
       "name": "Government debt/Staatsverschuldung - 20000368 - Final", 
       "query": "(or/countunique>1 (title adj \"10-Jahresrenditen\") (title adj \"10-Jahres-Renditen\") (title any/stemming \"Bundesanleihen\") (subtitle any/stemming \"Bundesanleihen\") (text_content adj \"Euro-Stabilit\u00e4tspakt\") (\"Bundesanleihen\") (\"Jahresanleihen\") (\"Pensionsreform\") (\"Schuldenabbau\") (\"Schuldenstand\") (\"Staatsschulden\") (\"Staatsverschuldung\") (\"Verschuldung\") (and (text_content any/stemming \"Defizit\") (or (text_content any/stemming \"Staat\") (text_content adj/stemming \"EU-Staat\") ) ) (and (or (\"Eurogruppe\") (\"Eurozone\") ) (\"Griechenland\") ) (prox/unit=sentence/distance=1 (or (body = \"Bundesl\u00e4nder\") (body = \"Regierungen\") (body adj \"Internationalen W\u00e4hrungsfonds\") ) (or (body = \"Finanzierung\") (body = \"Kapitalaufnahme\") (body = \"Kreditabkommen\") ) ) )", 
       "topicId": "medtop:20000368", 
       "topicName": "Staatsverschuldung"
     }, 
     {
-      "id": "590e502ea7b11b0001075f9f", 
       "name": "Stocks/Aktien - 20000396 - Final", 
       "query": "(or (text_content any/stemming \"B\u00f6rse\") (title = \"Leitb\u00f6rsen\") (title adj \"Euro-Stoxx-50\") (title adj \"Die zehn gr\u00f6\u00dften Kursgewinner und -verlierer des Tages\") (title adj \"Die zehn gr\u00f6\u00dften Kursgewinner und -verlierer der Woche\") )", 
       "topicId": "medtop:20000396", 
       "topicName": "Aktien"
     }, 
     {
-      "id": "590e4e28a7b11b0001075f9e", 
       "name": "Real estate/Immobilien - 20000241 - Final", 
       "query": "(and (or // terms in real estate business // (or/countunique>1 (title adj \"Immo-Kursziel\") (text_content adj/stemming \"privater Wohnbau\") (text_content adj \"Immo-Branche\") (text_content adj \"Immo-Deal\") (text_content adj \"Immo-Entwickler\") (text_content adj \"Immo-Treuh\u00e4nder\") (text_content adj \"Immobilien-Lagen\") (text_content adj \"Immobilien-Verkauf\") (text_content adj \"Immoinvest-Volumen\") // individual any-stemming statements to be able to trigger countunique more than once // (text_content any/stemming \"Immobiliendeal\") (text_content any/stemming \"Immobilienentwicklung\") (text_content any/stemming \"ImmoFirma\") (text_content any/stemming \"Immobiliendienstleister\") (text_content any/stemming \"Wohnbaupaket\") (text_content any/stemming \"Immobiliengesellschaft\") (text_content any/stemming \"Immobilienmakler\") (text_content any/stemming \"Immobilienfirma\") (text_content any/stemming \"Immobilienpreise\") (text_content any/stemming \"Immobilienmarktplatz\") (text_content any/stemming \"Immobilienentwickler\") (text_content any/stemming \"Immobilienentwicklers\") (text_content any/stemming \"Immobilientreuh\u00e4nder\") (text_content any/stemming \"Immobilienbesitz\") (text_content any/stemming \"Immobilienfond\") (text_content any/stemming \"Immobilienfond\") (text_content any/stemming \"Einzelhandelsimmobilen\") (text_content any/stemming \"Immoinvestmentgruppe\") (text_content any/stemming \"Immobilientochter\") (text_content any/stemming \"Wohnimmogesellschaft\") (text_content any/stemming \"Einzelhandelsimmobilen\") (text_content any/stemming \"Hauspreise\") (text_content any/stemming \"Immobilienmarkt\") (text_content any/stemming \"Immobilienmanagement\") (text_content any/stemming \"Immobilienbereich\") (text_content any/stemming \"Kaufhausprojekt\") (text_content any/stemming \"Immobilienleasing\") (text_content any/stemming \"Immobilieninvestition\") (text_content any/stemming \"Immobilienentwickler\") (text_content any/stemming \"Luxusimmobilien\") (text_content any/stemming \"Immobilientreuh\u00e4nder\") (text_content any/stemming \"Wohnbau\") (text_content any/stemming \"Fertighausbranche\") (text_content any/stemming \"Wohnimmobilien\") (text_content any/stemming \"Bautr\u00e4gervertr\u00e4ge\") (text_content any/stemming \"Wohnungsk\u00e4ufer\") (text_content any/stemming \"Wohnungskauf\") (text_content any/stemming \"Wohnbauoffensive\") (text_content any/stemming \"Wohnbaustadtrat\") (text_content any/stemming \"Gemeindewohnung\") ) // real estate companies // (or (prox/unit=sentence/distance=1 (or (body any \"Baufirma Immobilie Immobilienentwicklers Immobilienentwickler Porr\") ) (body = \"UBM\") ) (text_content adj \"6B47-Gruppe\") (text_content adj \"Atrium European Real Estate Limited\") (text_content adj \"Adler Real Estate\") (text_content adj \"CA Immo\") (text_content adj \"CA Immobilien Anlagen AG\") (text_content adj \"EHL Immobilien\") // typo in an article // (text_content adj \"EHL Immobilen\") (text_content adj \"EHL-Immobilien-Gruppe\") (text_content adj \"Finanzgruppe Imperial\") (text_content adj \"s-Immo-Gruppe\") (text_content adj \"s-Immo\") (text_content adj \"Wiener Immobilienrendite AG\") (text_content adj \"UBM Development AG\") (text_content any \"6B47 Atrium Buwog CBRE conwert Gesiba Immofinanz\") ) ) // exclusion terms, mostly related to stock market // (not (title adj \"Wiener Rentenmarkt\") (title adj \"Wiener B\u00f6rse\") (title adj \"Devisen Wien\") (title adj \"Devisen USA\") (title adj \"US-B\u00f6rsen\") (\"Aktienmarkt\") (title = \"Kursgewinner\") (title adj \"Die zehn gr\u00f6\u00dften Kursgewinner und -verlierer des Tages\") (title adj \"Die zehn gr\u00f6\u00dften Kursgewinner und -verlierer der Woche\") (title adj \"W I S S E N S C H A F T - B I L D U N G - TAGESPROGRAMM\") (title adj \"Sieben Tage Wirtschaft\") (title adj \"Sieben Tage Innenpolitik\") ) )", 
       "topicId": "medtop:20000241", 
       "topicName": "Immobilien"
     }, 
     {
-      "id": "590e441ea7b11b0001075f9c", 
       "name": "Pharma - 20000223 - Final", 
       "query": "(and (or // names of pharmaceutical industry companies // (or (\"Sanochemia\") (\"Boehringer\") (\"Pfizer\") (\"Valneva\") (\"Gilead\") ) // terms related to term pharmaceutical industry // (or/countunique>1 (\"Pharmaindustrie\") (\"Pharmawirtschaft\") (\"Biotechunternehmen\") (\"Biotechkonzern\") ) ) // exclusion terms, mainly related to stock market // (not (title = \"B\u00f6rse\") (title adj \"US-B\u00f6rsen\") (\"Aktienmarkt\") (title = \"Kursgewinner\") (title = \"Markt\") (title adj \"Die zehn gr\u00f6\u00dften Kursgewinner und -verlierer des Tages\") (title adj \"Die zehn gr\u00f6\u00dften Kursgewinner und -verlierer der Woche\") (title adj \"W I S S E N S C H A F T - B I L D U N G - TAGESPROGRAMM\") (title adj \"Sieben Tage Wirtschaft\") ) )", 
       "topicId": "medtop:20000223", 
       "topicName": "Pharmaindustrie"
     }, 
     {
-      "id": "590dff3aa7b11b0001075f8d", 
       "name": "Gays and lesbians/Homosexualit\u00e4t - 20000792 - Final", 
       "query": "(or (title = \"Homosexuelle\") (subtitle = \"Homosexuelle\") (title adj \"Homo-Rechte\") (subtitle adj \"Homo-Rechte\") (title adj/stemming \"Homo-Familie\") (subtitle adj/stemming \"Homo-Familie\") (title adj/stemming \"Homo-Partnerschaft\") (subtitle adj/stemming \"Homo-Partnerschaft\") (title adj/stemming \"Homo-Politiker\") (subtitle adj/stemming \"Homo-Politiker\") (title adj/stemming \"Homosexuellenverb\u00e4nde\") (title = \"Ampelp\u00e4rchen\") (\"Homosexualit\u00e4t\") (text_content adj \"Schwulen- und Lesbenhaus\") (title any/stemming \"Lebenspartnerschaft\") (prox/unit=sentence/distance=1 (\"homosexuelle\") (\"Paare\") ) )", 
       "topicId": "medtop:20000792", 
       "topicName": "Homosexuelle"
     }, 
     {
-      "id": "590df799a7b11b0001075f88", 
       "name": "Athletics/Leichtathletik - 20000827 - Final", 
       "query": "(or // topic name in title // (title = \"Leichtathletik\") // below roughly equates to above // (and (or/countunique>1 // topic name needs to be in text so other terms are more likely to be relevan // (\"Leichtathletik\") // athletes // (or (text_content adj \"Antonio Jimenez\") (text_content adj \"Jennifer Wenth\") (text_content adj \"Lukas Wei\u00dfhaidinger\") (text_content adj \"Sarah Lagger\") (text_content adj \"Dominik Hufnagl\") (text_content adj \"Andreas Vojta\") (text_content adj \"Victor Salazar\") (text_content adj \"Ivan Hierro\") (text_content adj \"Beate Schrott\") ) // competitions // (or (text_content adj \"Austrian Athletics Award\") (text_content adj \"Golden Fly Series\") (text_content adj \"Gugl-Indoor-Meeting\") ) // athletic unions international / national // (or (text_content adj \"Europ\u00e4ischen Leichtathletikverbandes\") (text_content adj \"\u00d6sterreichischen Leichtathletik-Verbandes\") (text_content adj \"Internationalen Leichtathletik-Verbandes\") (text_content adj \"Weltverband der Leichtathleten\") ) // union officials // (or (text_content adj \"Rune Andersen\") (text_content adj \"Sebastian Coe\") (text_content adj \"Svein Arne Hansen\") (text_content adj \"Ralph Vallon\") ) ) // exclusion terms - do not consider sports news // (not (title adj \"APA - S P O R T N A C H R I C H T E N\") (title adj \"SPORT - TAGESPROGRAMM\") ) ) )", 
       "topicId": "medtop:20000827", 
       "topicName": "Leichtathletik"
     }, 
     {
-      "id": "590de463a7b11b0001075f86", 
       "name": "Food/Essen und Trinken - 20000568 - Final", 
       "query": "(or // specific types of food // (or (text_content adj \"American-Burger\") (text_content adj \"Bio-Forelle\") (text_content adj \"Coca Cola-Life\") (text_content adj \"Di\u00e4t-Shakes\") (text_content adj \"Hausw\u00fcrstel nach K\u00e4rntner Art\") (text_content any/stemming \"Crepes Cupcakes Heringssalat Heringsschmaus Krapfen Oliven\u00f6l Taubengericht\") ) // food fairs // (or (text_content adj \"Street Food Festival\") (\"Genussmesse\") ) // other food-related term ( s ) // (or (text_content adj/stemming \"Food-Blog\") ) (or (title adj \"Cafe Willendorf\") ) )", 
       "topicId": "medtop:20000568", 
       "topicName": "Essen und Trinken"
     }, 
     {
-      "id": "590de245a7b11b0001075f85", 
       "name": "Cycling/Radsport - 20000892 - Final", 
       "query": "(or (title = \"Radsport\") (or (and (not // not consider news items that have narrower topic // (text_content any \"Eintagesrennen Querfeldein Massensprint Stra\u00dfenrennen Zeitfahren\") // not consider general sports news // (title adj \"APA - S P O R T N A C H R I C H T E N\") ) (or // cyclists // (or (text_content adj \"Alberto Contador\") (text_content adj \"Alejandro Valverde\") (text_content adj \"Christoph Strasser\") (text_content adj \"Felix Gro\u00dfschartner\") (text_content adj \"Geraint Thomas\") (text_content adj \"Jonathan Castroviejo\") (text_content adj \"Matthias Krizek\") (text_content adj \"Matthias Br\u00e4ndle\") (text_content adj \"Tony Martin\") (text_content adj \"Simon Gerrans\") (text_content adj \"Tejay Van Garderen\") ) // cycling championships // (or (text_content adj \"Andalusien-Rundfahrt\") (text_content adj \"Algarve-Rundfahrt\") (text_content adj \"GP Laguna Porec\") (text_content adj \"Race Across America\") (text_content adj \"Tour-de-France\") ) // cycling teams // (or (text_content adj \"Felbermayr Simplon Wels\") (text_content adj \"Orica-GreenEdge\") (text_content = \"Movistar\") ) ) ) ) )", 
       "topicId": "medtop:20000892", 
       "topicName": "Radsport"
     }, 
     {
-      "id": "590dda94a7b11b0001075f83", 
       "name": "Golf - 20000940 - Final", 
       "query": "(or (and (or // golfers // (or (text_content adj \"Rory McIlroy\") (text_content adj \"Bernd Wiesberger\") (text_content adj \"Rickie Fowler\") (text_content adj \"Martin Kaymer\") (text_content adj \"Gary Stal\") (text_content adj \"Lukas Nemecz\") ) // golf tournaments // (or (text_content adj \"Eurasia Cup\") (text_content adj \"US-PGA-Tour\") (text_content adj \"FedEx-Cup\") ) ) // exclusion terms // (not (title adj \"APA - S P O R T N A C H R I C H T E N\") ) ) )", 
       "topicId": "medtop:20000940", 
       "topicName": "Golf"
     }, 
     {
-      "id": "590dd4b3a7b11b0001075f80", 
       "name": "Fashion/Mode - 20000011 - Final", 
       "query": "(or (and (or (text_content any/stemming \"Luxuskonzern Mode Modedesigner Modegruppe Modeh\u00e4ndler Modehaus Modelabel Modesatire Modeschau Modesch\u00f6pfer\") ) // fashion brands // (or (text_content adj \"Dolce&Gabbana\") (text_content adj \"Dolce & Gabbana\") (text_content adj \"Louis Vuitton\") (text_content adj \"Roger Vivier\") (text_content any \"Luxottica Prada Safilo Swarovski Swatch Texhages\") ) ) // fashion awards // (or (text_content adj \"Austrian Fashion Awards\") (text_content adj \"Berliner Modesalon\") (text_content adj \"Fashion Week Berlin\") (text_content adj \"Mail\u00e4nder Modewoche\") (text_content adj \"Mido-Messe\") (text_content adj \"Pitti Uomo\") ) // season collections // (or (text_content adj \"Fr\u00fchjahr/Sommer-Kollektion\") (text_content adj \"Fr\u00fchjahrs-Kollektion\") (text_content adj \"Sommer-Kollektion\") (text_content adj \"Herbst/Winter-Kollektion\") (text_content adj \"Herbst-Kollektion\") (text_content adj \"Winter-Kollektion\") ) // designs // (or (text_content adj \"Glitter-Optik\") (text_content adj \"Bohemien-Style\") (text_content adj \"Seventies-Style\") (text_content any/stemming \"Ethnomuster Zuckerwattefarben\") ) (and // star designers ( real or imagined ) // (or (text_content adj \"Alexander McQueen\") (text_content adj \"Lena Hoschek\") (text_content adj \"Marina Hoermanseder\") (text_content adj \"Modezar Mugatu\") (text_content adj \"Nhut La Hong\") ) // only trigger rule if star designers not a guest in a tv show or similar // (not (text_content any/stemming \"Gast Stargast\") ) ) // specific accessories // (or (text_content adj \"Titan Minimal Art\") ) )", 
       "topicId": "medtop:20000011", 
       "topicName": "Mode"
     }, 
     {
-      "id": "590dd3a0a7b11b0001075f7f", 
       "name": "Soccer - 20001065 - Final", 
       "query": "(and (or (text_content any \"Fu\u00dfball Torwette\") ) // exclusion // (not (title adj \"APA - S P O R T N A C H R I C H T E N\") ) )", 
       "topicId": "medtop:20001065", 

@@ -3,81 +3,82 @@
     {
       "fields": [
         {
-          "hasParagraphs": false, 
-          "hasSentences": true, 
-          "name": "title", 
+          "hasParagraphs": false,
+          "hasSentences": true,
+          "name": "title",
           "textual": true
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": true, 
-          "name": "subtitle", 
+          "hasParagraphs": false,
+          "hasSentences": true,
+          "name": "subtitle",
           "textual": true
-        }, 
+        },
         {
-          "hasParagraphs": true, 
-          "hasSentences": true, 
-          "name": "body", 
+          "hasParagraphs": true,
+          "hasSentences": true,
+          "name": "body",
           "textual": true
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": false, 
-          "name": "id", 
+          "hasParagraphs": false,
+          "hasSentences": false,
+          "name": "id",
           "textual": false
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": false, 
-          "name": "slugline", 
+          "hasParagraphs": false,
+          "hasSentences": false,
+          "name": "slugline",
           "textual": false
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": false, 
-          "name": "versionCreated", 
-          "textual": false
+          "hasParagraphs": false,
+          "hasSentences": false,
+          "name": "versionCreated",
+          "textual": false,
+		      "date": true
         }
-      ], 
-      "language": "german", 
+      ],
+      "language": "german",
       "name": "Apa Schema"
-    }, 
+    },
     {
       "fields": [
         {
-          "hasParagraphs": false, 
-          "hasSentences": true, 
-          "name": "title", 
+          "hasParagraphs": false,
+          "hasSentences": true,
+          "name": "title",
           "textual": true
-        }, 
+        },
         {
-          "hasParagraphs": true, 
-          "hasSentences": true, 
-          "name": "body", 
+          "hasParagraphs": true,
+          "hasSentences": true,
+          "name": "body",
           "textual": true
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": false, 
-          "name": "id", 
+          "hasParagraphs": false,
+          "hasSentences": false,
+          "name": "id",
           "textual": false
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": false, 
-          "name": "slugline", 
+          "hasParagraphs": false,
+          "hasSentences": false,
+          "name": "slugline",
           "textual": false
-        }, 
+        },
         {
-          "hasParagraphs": false, 
-          "hasSentences": false, 
-          "name": "versionCreated", 
-          "textual": false
+          "hasParagraphs": false,
+          "hasSentences": false,
+          "name": "versionCreated",
+          "textual": false,
+		      "date": true
         }
-      ], 
-      "language": "english", 
+      ],
+      "language": "english",
       "name": "Reuters Schema"
     }
   ]
 }
-

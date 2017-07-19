@@ -10,8 +10,8 @@
         {
           "corpus_name": "Reuters",
           "language": "english",
-          "schema" : {"fields":[{"hasParagraphs":false,"hasSentences":true,"name":"title","textual":true},{"hasParagraphs":true,"hasSentences":true,"name":"body","textual":true},{"hasParagraphs":false,"hasSentences":false,"name":"id","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"slugline","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"versionCreated","textual":false}],"language":"english","name":"Reuters Schema"},
-          "documents_file" : ""
+          "schema" : {"fields":[{"hasParagraphs":false,"hasSentences":true,"name":"title","textual":true},{"hasParagraphs":true,"hasSentences":true,"name":"body","textual":true},{"hasParagraphs":false,"hasSentences":false,"name":"id","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"slugline","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"versionCreated","textual":false,"date":true}],"language":"english","name":"Reuters Schema"},
+          "documents_file" : "corpora/reuters-documents.json"
         }
       ]
     },
@@ -24,8 +24,8 @@
         {
           "corpus_name": "APA",
           "language": "german",
-          "schema":{"fields":[{"hasParagraphs":false,"hasSentences":true,"name":"title","textual":true},{"hasParagraphs":false,"hasSentences":true,"name":"subtitle","textual":true},{"hasParagraphs":true,"hasSentences":true,"name":"body","textual":true},{"hasParagraphs":false,"hasSentences":false,"name":"id","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"slugline","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"versionCreated","textual":false}],"language":"german","name":"Apa Schema"},
-          "documents_file" : ""
+          "schema":{"fields":[{"hasParagraphs":false,"hasSentences":true,"name":"title","textual":true},{"hasParagraphs":false,"hasSentences":true,"name":"subtitle","textual":true},{"hasParagraphs":true,"hasSentences":true,"name":"body","textual":true},{"hasParagraphs":false,"hasSentences":false,"name":"id","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"slugline","textual":false},{"hasParagraphs":false,"hasSentences":false,"name":"versionCreated","textual":false,"date":true}],"language":"german","name":"Apa Schema"},
+          "documents_file" : "corpora/apa-documents.json"
         }
       ]
     }
