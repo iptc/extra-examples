@@ -14,7 +14,7 @@ There are five types of resources: rules, schemas, taxonomies, topics and corpor
 **Note!** You can import all the resources by running [this](https://github.com/iptc/extra-examples/blob/master/insert_resources.py) python script.
 
 ```sh
-$python insert_resources.py params.json
+$ python insert_resources.py params.json
 ```
 The only change you need to make is to add the directory of the documents (`documents_file`) in the [params.json](https://github.com/iptc/extra-examples/blob/master/params.json) file. To get the document please fill the form you can find [here](https://github.com/iptc/extra-examples/tree/master/corpora).  
 
